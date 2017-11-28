@@ -1,0 +1,110 @@
+<vbox style="padding: 5px;">
+    <script>
+        function clear() {
+            lv1.dataSource.clear();
+            lv2.dataSource.clear();
+        }
+        
+        function add(n) {
+            lv1.dataSource.allowCallbacks = false;
+            lv2.dataSource.allowCallbacks = false;
+            
+            for (a in 0...n) {
+                lv1.dataSource.add({value: "Item " + (lv1.dataSource.size + 1), icon: "haxeui-core/styles/default/haxeui_tiny.png"});
+                lv2.dataSource.add({value: "Item " + (lv2.dataSource.size + 1), subLabel: "Sub Item " + (lv2.dataSource.size + 1), icon: "haxeui-core/styles/default/haxeui_small.png"});
+            }
+            
+            lv1.dataSource.allowCallbacks = true;
+            lv2.dataSource.allowCallbacks = true;
+        }
+        
+        function remove(n) {
+            lv1.dataSource.allowCallbacks = false;
+            lv2.dataSource.allowCallbacks = false;
+
+            for (a in 0...n) {
+                lv1.dataSource.remove(lv1.dataSource.get(lv1.dataSource.size - 1));
+                lv2.dataSource.remove(lv2.dataSource.get(lv2.dataSource.size - 1));
+            }
+            
+            lv1.dataSource.allowCallbacks = true;
+            lv2.dataSource.allowCallbacks = true;
+        }
+    </script>
+
+    <hbox>
+        <button text="Clear" onclick="clear()" />
+        
+        <button text="Add" onclick="add(1)" />
+        <button text="Add 10" onclick="add(10)" />
+        <button text="Add 100" onclick="add(100)" />
+        
+        <button text="Remove" onclick="remove(1)" />
+        <button text="Remove 10" onclick="remove(10)" />
+        <button text="Remove 100" onclick="remove(100)" />
+    </hbox>
+    
+    <listview id="lv1" width="100%" height="200">
+        <data>
+            <item value="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 5" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 6" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 7" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 10" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 11" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 12" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 13" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 14" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 15" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 16" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 17" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 18" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 19" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <item value="Item 20" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        </data>
+    </listview>
+    
+    <!--
+        TODO: item renderer component events not linked up (no event!)
+    -->
+    <listview id="lv2" width="100%" height="200">
+        <itemrenderer width="100%">
+            <hbox width="100%">
+                <checkbox id="check" style="vertical-align:center;" />
+                <image id="icon" />
+                <vbox width="100%" style="vertical-align:center;">
+                    <label id="value" width="100%" style="font-bold: true;font-underline: true;" />
+                    <label id="subLabel" width="100%" style="font-italic: true;color: #888888;" />
+                </vbox>    
+                <button text="Action" style="vertical-align:center;" />
+            </hbox>    
+        </itemrenderer>
+        <data>
+            <item value="Item 1" subLabel="Sub Item 1" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 2" subLabel="Sub Item 2" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 3" subLabel="Sub Item 3" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 4" subLabel="Sub Item 4" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 5" subLabel="Sub Item 5" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 6" subLabel="Sub Item 6" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 7" subLabel="Sub Item 7" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 8" subLabel="Sub Item 8" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 9" subLabel="Sub Item 9" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 10" subLabel="Sub Item 10" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 11" subLabel="Sub Item 11" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 12" subLabel="Sub Item 12" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 13" subLabel="Sub Item 13" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 14" subLabel="Sub Item 14" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 15" subLabel="Sub Item 15" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 16" subLabel="Sub Item 16" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 17" subLabel="Sub Item 17" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 18" subLabel="Sub Item 18" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 19" subLabel="Sub Item 19" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <item value="Item 20" subLabel="Sub Item 20" icon="haxeui-core/styles/default/haxeui_small.png" />
+        </data>
+    </listview>
+</vbox>
