@@ -1,0 +1,16 @@
+<hbox style="padding: 5px;">
+    <vbox>
+        <textfield text="Standard" />
+        <textfield placeholder="Placeholder" />
+        <textfield text="Password" password="true" />
+        <textfield placeholder="Enter Password" password="true" />
+        <textfield text="Icon" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <textfield text="Native" icon="haxeui-core/styles/default/haxeui_tiny.png" native="true" />
+    </vbox>
+    <grid columns="2">
+        <textarea width="150" height="85" text="This is some text that should wrap, it has no line breaks or words that make it scroll horizontally, so only a vertical scrollbar should be visible" />
+        <textarea width="150" height="85" text="Line1\nLine2\nLine3 - this line should wrap to the next line\nLine4\nLine5\nLine6\nLine7\nLine8\nLine10" />
+        <textarea width="150" height="85" wrap="false" text="Line1\nLine2\nLine3 - this line should NOT wrap to the next line\nLine4\nLine5\nLine6\nLine7\nLine8\nLine10" />
+        <textarea width="150" height="85" native="true" text="This is some text that should wrap, it has no line breaks or words that make it scroll horizontally, so only a vertical scrollbar should be visible" />
+    </grid>
+</hbox>
