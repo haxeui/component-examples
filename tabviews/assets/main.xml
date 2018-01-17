@@ -1,0 +1,50 @@
+<vbox style="padding: 5px;">
+    <script>
+        function add() {
+            var vbox = new VBox();
+            vbox.text = "Page " + (tabview.pageCount + 1);
+            vbox.icon = "haxeui-core/styles/default/haxeui_tiny.png";
+            
+            var button = new Button();
+            button.text = "Content " + (tabview.pageCount + 1);
+            vbox.addComponent(button);
+            
+            tabview.addComponent(vbox);
+        }
+        
+        function removeFirst() {
+            if (tabview.pageCount > 0) {
+                tabview.removePage(0);
+            }
+        }
+        
+        function removeLast() {
+            if (tabview.pageCount > 0) {
+                tabview.removePage(tabview.pageCount - 1);
+            }
+        }
+        
+        function removeAll() {
+            tabview.removeAllPages();
+        }
+    </script>
+    
+    <tabview id="tabview" width="400" height="400">
+        <vbox text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Content 1" />
+        </vbox>
+        <vbox text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Content 2" />
+        </vbox>
+        <vbox text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Content 3" />
+        </vbox>
+    </tabview>
+    
+    <hbox>
+        <button text="Add" onclick="add()" />
+        <button text="Remove First" onclick="removeFirst()" />
+        <button text="Remove Last" onclick="removeLast()" />
+        <button text="Remove All" onclick="removeAll()" />
+    </hbox>
+</vbox>
