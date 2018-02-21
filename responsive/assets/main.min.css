@@ -1,0 +1,31 @@
+.header{background-color:#AAAACC;padding:5px;filter:drop-shadow(1,45,#000000,0.5,2,2,1,3,false);}
+.footer{background-color:#CCAACC;padding:5px;filter:drop-shadow(1,45,#000000,0.5,2,2,1,3,false);}
+.header label,.footer label{font-size:18px;color:white;}
+.menu{width:100%;}
+.menu box{width:100%;background-color:#AACCCC;padding:5px;filter:drop-shadow(1,45,#000000,0.5,2,2,1,3,false);}
+.menu label{width:100%;color:white;}
+.sidebar{width:100%;}
+.sidebar box{width:100%;background-color:#CCCCAA;padding:5px;filter:drop-shadow(1,45,#000000,0.5,2,2,1,3,false);}
+.sidebar label{width:100%;color:white;}
+.content{width:100%;padding:5px;}
+#logo{resource:"haxeui-core/styles/default/haxeui_tiny.png";}
+#small{hidden:false;}
+#medium{hidden:true;}
+#large{hidden:true;}
+#html5,#hxwidgets{hidden:true;}
+@media (min-width:500px){.menu{width:25%;}
+.content{width:75%;}
+#logo{resource:"haxeui-core/styles/default/haxeui_small.png";}
+#small{hidden:true;}
+#medium{hidden:false;}
+#large{hidden:true;}}
+@media (min-width:800px){.menu{width:25%;}
+.sidebar{width:25%;}
+.content{width:50%;}
+#small{hidden:true;}
+#medium{hidden:true;}
+#large{hidden:false;}}
+@media (backend:html5){#html5{hidden:false;}
+#hxwidgets{hidden:true;}}
+@media (backend:hxwidgets){#html5{hidden:true;}
+#hxwidgets{hidden:false;}}
