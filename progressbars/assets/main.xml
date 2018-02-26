@@ -1,0 +1,14 @@
+<vbox style="padding: 5px;">
+    <vbox>
+        <hprogress pos="50" />
+        <hprogress min="5" max="10" pos="9" />
+        <hprogress rangeStart="25" rangeEnd="75" />
+        <hprogress indeterminate="true" />
+    </vbox>    
+    <hbox>
+        <vprogress pos="50" />
+        <vprogress min="5" max="10" pos="9" />
+        <vprogress rangeStart="25" rangeEnd="75" />
+        <vprogress indeterminate="true" />
+    </hbox>    
+</vbox>
