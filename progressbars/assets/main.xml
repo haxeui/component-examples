@@ -13,7 +13,7 @@
     <hbox>
         <vbox>
             <progress id="progress1" pos="75" />
-            <progress id="progress2" pos="66" interactive="true" onchange="value.text = 'Value is: ' + this.pos" />
+            <progress id="progress2" pos="66" allowInteraction="true" onchange="value.text = 'Value is: ' + this.pos" />
             <progress indeterminate="true" />
             
             <progress id="progress3" pos="75" native="true" />
@@ -22,7 +22,7 @@
         
         <hbox>
             <progress id="progress4" direction="vertical" pos="75" />
-            <progress id="progress5" direction="vertical" pos="66" interactive="true" onchange="value.text = 'Value is: ' + this.pos" />
+            <progress id="progress5" direction="vertical" pos="66" allowInteraction="true" onchange="value.text = 'Value is: ' + this.pos" />
             <progress direction="vertical" indeterminate="true" />
 
             <progress id="progress6" direction="vertical" pos="75" native="true" />
