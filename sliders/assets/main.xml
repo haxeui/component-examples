@@ -1,21 +1,35 @@
 <vbox style="padding: 5px;">
-    <grid columns="2">
-        <hslider pos="50" round="true" onchange="value1.text = '' + this.pos" />
-        <label id="value1" />
+    <script>
+        function set(value) {
+            slider1.pos = value;
+            slider2.pos = value;
+            slider3.pos = value;
+            slider4.pos = value;
+            slider5.pos = value;
+            slider6.pos = value;
+        }
+    </script>
+    
+    <hbox>
+        <vbox>
+            <slider id="slider1" pos="75" onchange="sliderValue.text = 'Value is: ' + this.pos" />
+            <slider id="slider2" start="33" end="66" onchange="sliderValue.text = 'Value is: ' + this.start + ' - ' + this.end" />
+            
+            <slider id="slider3" pos="75" native="true" onchange="sliderValue.text = 'Value is: ' + this.pos" />
+        </vbox>
         
-        <hslider min="5" max="10" pos="9" round="true" onchange="value2.text = '' + this.pos" />
-        <label id="value2" />
-        
-        <hslider rangeStart="25" rangeEnd="75" round="true" onchange="value3.text = '' + this.rangeStart + ' - ' + this.rangeEnd" />
-        <label id="value3" />
-    </grid>    
-    <grid columns="3">
-        <label id="value4" />
-        <label id="value5" />
-        <label id="value6" />
-        
-        <vslider pos="50" round="true" onchange="value4.text = '' + this.pos" />
-        <vslider min="5" max="10" pos="9" round="true" onchange="value5.text = '' + this.pos" />
-        <vslider rangeStart="25" rangeEnd="75" round="true" onchange="value6.text = '' + this.rangeStart + ' - ' + this.rangeEnd" />
-    </grid>    
+        <hbox>
+            <slider id="slider4" direction="vertical" pos="75" onchange="sliderValue.text = 'Value is: ' + this.pos" />
+            <slider id="slider5" direction="vertical" start="33" end="66" onchange="sliderValue.text = 'Value is: ' + this.start + ' - ' + this.end"  />
+
+            <slider id="slider6" direction="vertical" pos="75" native="true" onchange="sliderValue.text = 'Value is: ' + this.pos" />
+        </hbox>
+    </hbox>
+    
+    <hbox>
+        <textfield id="newValue" value="50" />
+        <button text="Set" onclick="set(Std.parseInt(newValue.text))" />
+    </hbox>    
+    <label id="sliderValue" />
 </vbox>
+    
