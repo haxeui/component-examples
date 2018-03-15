@@ -8,10 +8,10 @@
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
-    <movie version="0" />
+    <movie version="16" />
     <movie minorVersion="0" />
     <movie platform="JavaScript" />
-    <movie background="#FFFFFF" />
+    <movie background="#ffffff" />
     <movie preferredSDK="Kha\Tools\haxe" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
@@ -34,7 +34,7 @@
   </build>
   <!-- haxelib libraries -->
   <haxelib>
-    <library name="actuate" />
+    <!-- example: <library name="..." /> -->
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
@@ -42,7 +42,7 @@
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
-    <hidden path="obj" />
+    <!-- example: <hidden path="..." /> -->
   </hiddenPaths>
   <!-- Executed before build -->
   <preBuildCommand />
