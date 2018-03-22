@@ -1,0 +1,27 @@
+ <vbox style="padding: 5px;">
+    <label width="500" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus neque et rutrum dictum. Nunc sit amet sapien cursus, viverra ante in, consectetur tellus. Quisque sapien lacus, pulvinar nec placerat in, consectetur sed nibh. Fusce gravida bibendum augue et convallis. Quisque et est venenatis, vehicula urna sit amet, volutpat erat. Donec facilisis nec odio eget hendrerit. Etiam condimentum, turpis nec bibendum lobortis, est ex egestas est, at lacinia quam lorem vitae arcu. Sed dictum orci in dapibus aliquet." style="background-color:#FFCCCC;" />
+    <hbox width="100%">
+        <vbox>
+            <label text="Align left" width="200" textAlign="left" style="background-color: #CCCCFF;" />
+            <label text="Align center" width="200" textAlign="center" style="background-color: #CCCCFF;" />
+            <label text="Align right" width="200" textAlign="right" style="background-color: #CCCCFF;" />
+        </vbox>
+        
+        <vbox width="100%">
+            <label text="Normal" width="100%" textAlign="right" />
+            <label text="Big" width="100%" textAlign="right" style="font-size: 18px;" />
+            <label text="Bigger" width="100%" textAlign="right" style="font-size: 36px;" />
+        </vbox>
+    </hbox>
+    <hbox width="100%">
+        <label width="33%" text="Red" style="color: red; font-size: 18px;" />
+        <label width="34%" text="Green" textAlign="center" style="color: green; font-size: 18px;" />
+        <label width="33%" text="Blue" textAlign="right" style="color: blue; font-size: 18px;" />
+    </hbox>
+    <hbox width="100%">
+        <label width="33%" text="Bold" style="font-bold: true; font-size: 18px;" />
+        <label width="34%" text="Italic" textAlign="center" style="font-italic: true; font-size: 18px;" />
+        <label width="33%" text="Underline" textAlign="right" style="font-underline: true; font-size: 18px;" />
+    </hbox>
+    <label width="100%" text="All" textAlign="center" style="font-size: 36px; color: blue;font-bold: true;font-italic:true;font-underline:true;" />
+</vbox>
