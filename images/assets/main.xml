@@ -1,6 +1,15 @@
 <vbox style="padding: 5px;">
-    <button text="Click Me!" onclick="this.text='Thanks!'" style="font-size: 24px;" />
+    <style>
+    .image2 {
+        width: auto;
+        height: auto;
+    }
+    </style>
     
-    
-    
+    <grid columns="2">
+        <image2 resource="haxeui-core/styles/default/haxeui.png" />
+        <image2 resource="http://i.imgur.com/fHyEMsl.png" />
+        <image2 resource="haxeui-core/styles/default/haxeui.png" />
+        <image2 resource="file://Z:/HaxeUI2/haxeui-examples/component-examples/images/assets/fHyEMsl.png" />
+    </grid>    
 </vbox>
