@@ -1,9 +1,28 @@
 <vbox style="padding: 5px;">
-    <grid columns="2">
-        <image resource="haxeui-core/styles/default/haxeui.png" />
-        <image resource="http://i.imgur.com/Qz2EVXR.png" />
-        <image resource="haxeui-core/styles/default/haxeui.png" />
-        <image resource="file://Z:/HaxeUI2/haxeui-examples/component-examples/images/assets/haxeui_96.png" />
-    </grid>    
+
+    <style>
+        .image {
+            border: 1px #999999;
+            resource: "haxeui-core/styles/default/haxeui.png";
+        }
+    </style>
+
+    <grid columns="3">
+        <image width="200" height="200" resource="http://i.imgur.com/Qz2EVXR.png" />
+        <image width="200" height="200" />
+        <image width="200" height="200" scaleMode="fill"/>
+
+        <image width="200" height="100" scaleMode="none"/>
+        <image width="200" height="100" scaleMode="fill"/>
+        <image width="200" height="100" scaleMode="fitheight"/>
+
+        <image width="200" height="100" scaleMode="fitinside" imageHorizontalAlign="left"/>
+        <image width="200" height="100" scaleMode="fitinside" imageHorizontalAlign="center"/>
+        <image width="200" height="100" scaleMode="fitinside" imageHorizontalAlign="right"/>
+
+        <image width="200" height="100" scaleMode="fitoutside" imageVerticalAlign="top"/>
+        <image width="200" height="100" scaleMode="fitoutside" imageVerticalAlign="center"/>
+        <image width="200" height="100" scaleMode="fitoutside" imageVerticalAlign="bottom"/>
+    </grid>
 </vbox>
     
