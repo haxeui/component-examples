@@ -1,5 +1,5 @@
  <vbox style="padding: 5px;">
-    <label width="500" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus neque et rutrum dictum. Nunc sit amet sapien cursus, viverra ante in, consectetur tellus. Quisque sapien lacus, pulvinar nec placerat in, consectetur sed nibh. Fusce gravida bibendum augue et convallis. Quisque et est venenatis, vehicula urna sit amet, volutpat erat. Donec facilisis nec odio eget hendrerit. Etiam condimentum, turpis nec bibendum lobortis, est ex egestas est, at lacinia quam lorem vitae arcu. Sed dictum orci in dapibus aliquet." style="background-color:#FFCCCC;" />
+    <label width="500" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus neque et rutrum dictum. Nunc sit amet sapien cursus, viverra ante in, consectetur tellus. Quisque sapien lacus, pulvinar nec placerat in, consectetur sed nibh. Fusce gravida bibendum augue et convallis. Quisque et est venenatis, vehicula urna sit amet, volutpat erat. Donec facilisis nec odio eget hendrerit. Etiam condimentum, turpis nec bibendum lobortis, est ex egestas est, at lacinia quam lorem vitae arcu. Sed dictum orci in dapibus aliquet." style="background-color:#FFCCCC;" /> 
     <hbox width="100%">
         <vbox>
             <label text="Align left" width="200" textAlign="left" style="background-color: #CCCCFF;" />
