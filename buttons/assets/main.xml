@@ -38,6 +38,46 @@
         filter: drop-shadow(1, 45, #000000, 0.6, 2, 2, 1, 3, true);
     }
     
+    .bitmapButton {
+        background-image: "assets/button.png";
+        background-image-clip: 0px 0px 40px 94px;
+        background-image-slice: 10px 10px 30px 84px;
+        border: none;
+        background-color: white;
+        color: #666666 !important;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+    }
+
+    .bitmapButton .label {
+        margin-top: -1px;
+    }
+
+    .bitmapButton:hover {
+        background-image: "assets/button.png";
+        background-image-clip: 0px 95px 40px 189px;
+        background-image-slice: 10px 10px 30px 84px;
+        border: none;
+        background-color: white;
+        color: #FFFFFF !important;
+    }
+
+    .bitmapButton:down {
+        background-image: "assets/button.png";
+        background-image-clip: 0px 190px 40px 284px;
+        background-image-slice: 10px 10px 30px 84px;
+        border: none;
+        background-color: white;
+        color: #FCFCFC !important;
+    }
+
+    .bitmapButton:down .label {
+        margin-top: 0px;
+        margin-left: 1px;
+    }
+    
     </style>
     
     <hbox>
@@ -56,8 +96,38 @@
     </hbox>
     
     <hbox>
-        <button text="Add" onclick="add()" />
-        <button text="Remove" onclick="remove()" />
+        <button text="HTTP" icon="http://i.imgur.com/Qz2EVXR.png" />
+        <button text="File" icon="file://Z:/HaxeUI2/haxeui-examples/component-examples/buttons/assets/haxeui_96.png" />
+        <button text="Asset" icon="haxeui-core/styles/default/haxeui_small.png" />
+        <vbox>
+            <button text="Repeater" onclick="repeatCount.text = Std.parseInt(repeatCount.text) + 1" repeater="true" />
+            <hbox>
+                <label text="Count:" />
+                <label id="repeatCount" text="0" />
+            </hbox>    
+            <button text="Toogle" toggle="true" />
+        </vbox>    
+    </hbox>
+    
+    <hbox>
+        <grid columns="2">
+            <button text="Native" native="true" />
+            <button text="Native" native="true" icon="http://i.imgur.com/Qz2EVXR.png" iconPosition="right" />
+            <button text="Native" native="true" icon="file://Z:/HaxeUI2/haxeui-examples/component-examples/buttons/assets/haxeui_96.png" />
+            <button text="Native" native="true" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" />
+        </grid>
+        
+        <grid columns="2">
+            <button text="Bitmap" styleName="bitmapButton" />
+            <button text="Bitmap" styleName="bitmapButton" icon="http://i.imgur.com/Qz2EVXR.png" iconPosition="right" />
+            <button text="Bitmap" styleName="bitmapButton" icon="file://Z:/HaxeUI2/haxeui-examples/component-examples/buttons/assets/haxeui_96.png" />
+            <button text="Bitmap" styleName="bitmapButton" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" />
+        </grid>
+    </hbox>
+    
+    <hbox>
+        <button text="Add Button" onclick="add()" />
+        <button text="Remove Button" onclick="remove()" />
     </hbox>
     <grid columns="3" id="container">
         

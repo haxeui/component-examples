@@ -1,15 +1,9 @@
 <vbox style="padding: 5px;">
-    <style>
-    .image2 {
-        width: auto;
-        height: auto;
-    }
-    </style>
-    
     <grid columns="2">
-        <image2 resource="haxeui-core/styles/default/haxeui.png" />
-        <image2 resource="http://i.imgur.com/fHyEMsl.png" />
-        <image2 resource="haxeui-core/styles/default/haxeui.png" />
-        <image2 resource="file://Z:/HaxeUI2/haxeui-examples/component-examples/images/assets/fHyEMsl.png" />
+        <image resource="haxeui-core/styles/default/haxeui.png" />
+        <image resource="http://i.imgur.com/Qz2EVXR.png" />
+        <image resource="haxeui-core/styles/default/haxeui.png" />
+        <image resource="file://Z:/HaxeUI2/haxeui-examples/component-examples/images/assets/haxeui_96.png" />
     </grid>    
 </vbox>
+    
