@@ -1,3 +1,146 @@
 <vbox style="padding: 5px;">
-    <button text="Click Me!" onclick="this.text='Thanks!'" style="font-size: 24px;" />
+    <style>
+        .checkbox2 {
+            __background-color: red;
+            spacing: 4px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .checkbox2:hover {
+            __color: #216AAE;
+        }
+        
+        
+        
+.checkbox2-value {
+    border: 1px solid #ABABAB;
+    background-color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+    vertical-align: center;
+    border-radius: 2px;
+    icon: none;
+    filter: drop-shadow(1, 45, #888888, 0.2, 2, 2, 1, 3, true);
+}
+        
+.checkbox2-value:hover {
+    border: 1px solid #216AAE;
+}
+
+.checkbox2-label {
+    vertical-align: center;
+}
+
+.checkbox2-value:selected {
+    icon: "haxeui-core/styles/default/check.png";
+}
+
+.checkbox2-icon {
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+        .optionbox2 {
+            __background-color: red;
+            spacing: 4px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .optionbox2:hover {
+            __color: #216AAE;
+        }
+        
+        
+        
+.optionbox2-value {
+    border: 1px solid #ABABAB;
+    background-color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+    vertical-align: center;
+    border-radius: 18px;
+    icon: none;
+    filter: drop-shadow(1, 45, #888888, 0.2, 2, 2, 1, 3, true);
+}
+        
+.optionbox2-value:hover {
+    border: 1px solid #216AAE;
+}
+
+.optionbox2-label {
+    vertical-align: center;
+}
+
+.optionbox2-value:selected {
+    icon: "haxeui-core/styles/default/option.png";
+}
+
+.optionbox2-icon {
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <!--
+    <script>
+    function test() {
+        trace("got event!");
+        checkboxValue.text = this.id + (this.selected == true ? ' selected' : ' unselected');
+    }
+    </script>
+    
+        <checkbox2 id="checkbox_a1" text="Checkbox A1" onchange="test()" />
+    <label id="checkboxValue" width="100%" />
+    -->
+    
+    <hbox>
+        <checkbox2 id="checkbox_a1" text="Checkbox A1" onchange="checkboxValue.text = this.id + (this.selected == true ? ' selected' : ' unselected')" />
+        <checkbox2 id="checkbox_a2" text="Checkbox A2" onchange="checkboxValue.text = this.id + (this.selected == true ? ' selected' : ' unselected')" />
+        <checkbox2 id="checkbox_a3" text="Checkbox A3" onchange="checkboxValue.text = this.id + (this.selected == true ? ' selected' : ' unselected')" />
+    </hbox>
+    
+    <hbox>
+        <optionbox2 id="optionbox_a1" text="Optionbox A1" onchange="checkboxValue.text = this.selectedOption.id + ' selected'" />
+        <optionbox2 id="optionbox_a2" selected="true" text="Optionbox A2" onchange="checkboxValue.text = this.selectedOption.id + ' selected'" />
+        <optionbox2 id="optionbox_a3" text="Optionbox A3" onchange="checkboxValue.text = this.selectedOption.id + ' selected'" />
+    </hbox>
+    
+    <hbox>
+        <vbox>
+            <optionbox2 id="optionbox_b1" group="B" text="Optionbox B1" onchange="checkboxValue.text = this.selectedOption.id + ' selected'" />
+            <optionbox2 id="optionbox_b2" group="B" selected="true" text="Optionbox B2" onchange="checkboxValue.text = this.selectedOption.id + ' selected'" />
+            <optionbox2 id="optionbox_b3" group="B" text="Optionbox B3" onchange="checkboxValue.text = this.selectedOption.id + ' selected'" />
+        </vbox>
+        
+        <vbox>
+            <checkbox2 id="checkbox_b1" text="Checkbox B1" onchange="checkboxValue.text = this.id + (this.selected == true ? ' selected' : ' unselected')" />
+            <checkbox2 id="checkbox_b2" text="Checkbox B2" onchange="checkboxValue.text = this.id + (this.selected == true ? ' selected' : ' unselected')" />
+            <checkbox2 id="checkbox_b3" text="Checkbox B3" onchange="checkboxValue.text = this.id + (this.selected == true ? ' selected' : ' unselected')" />
+        </vbox>
+    </hbox>
+    
+    <label id="checkboxValue" width="100%" />
 </vbox>
