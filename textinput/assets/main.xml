@@ -1,4 +1,76 @@
 <hbox style="padding: 5px;">
+    <style>
+        /************************************************************************
+        ** STYLED
+        *************************************************************************/
+        .styled {
+            border-size: 3px;
+            border-radius: 10px;
+            border-color: #997a00;
+            background: #ffa700 #ffce00;
+            color: #665200;
+            filter: drop-shadow(2, 45, #000000, 0.3, 2, 2, 1, 3, true);
+            padding-top: 8px;
+            padding-bottom: 12px;
+            padding-left: 8px;
+            padding-right: 12px;
+            font-size: 15px;
+            font-style: bold;
+        }
+
+        .styled:active {
+            background: #ffb833 #ffd633;
+            color: #997a00;
+        }
+        
+        /************************************************************************
+        ** BITMAP
+        *************************************************************************/
+        .bitmap {
+            background-image: "assets/textfield.png";
+            background-image-clip: 0px 0px 34px 225px;
+            background-image-slice: 6px 6px 28px 219px;
+            filter: none;
+            border: none;
+            padding-top: 10px;
+            padding-left: 8px;
+            padding-bottom: 8px;
+            padding-right: 8px;
+            color: #666666;
+        }
+
+        .bitmap:active {
+            background-image: "assets/textfield.png";
+            background-image-clip: 0px 226px 34px 451px;
+            background-image-slice: 6px 6px 28px 219px;
+            filter: none;
+            border: none;
+            color: #44A5E3;
+        }
+    </style>
+    
+    <script>
+        function textfieldChanged(textfield) {
+            textfieldLength.text = 'Length: ' + textfield.text.length;
+        }
+    </script>
+    
+    <vbox>
+        <textfield text="Standard" onchange="textfieldChanged(this)" />
+        <textfield placeholder="Placeholder" onchange="textfieldChanged(this)" />
+        <textfield placeholder="Restricted" maxChars="10" restrictChars="0-9a-z^Qq" onchange="textfieldChanged(this)" />
+        <textfield text="Password" password="true" onchange="textfieldChanged(this)" />
+        <textfield placeholder="Enter Password" password="true" onchange="textfieldChanged(this)" />
+        <textfield text="Icon" icon="haxeui-core/styles/default/haxeui_tiny.png" onchange="textfieldChanged(this)" />
+        <textfield text="Native" placeholder="Password" native="true" onchange="textfieldChanged(this)" />
+        <textfield text="Big" style="font-size: 24px;" onchange="textfieldChanged(this)" />
+        <textfield text="High" onchange="textfieldChanged(this)" height="50" />
+        <textfield text="Styled" styleNames="styled" onchange="textfieldChanged(this)" />
+        <textfield text="Bitmap" styleNames="bitmap" onchange="textfieldChanged(this)" />
+        <label id="textfieldLength" width="100%" />
+    </vbox>
+    
+    <!--
     <vbox>
         <textfield text="Standard" />
         <textfield placeholder="Placeholder" />
@@ -13,4 +85,5 @@
         <textarea width="150" height="85" wrap="false" text="Line1\nLine2\nLine3 - this line should NOT wrap to the next line\nLine4\nLine5\nLine6\nLine7\nLine8\nLine10" />
         <textarea width="150" height="85" native="true" text="This is some text that should wrap, it has no line breaks or words that make it scroll horizontally, so only a vertical scrollbar should be visible" />
     </grid>
+    -->    
 </hbox>
