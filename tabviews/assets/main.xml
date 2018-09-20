@@ -1,50 +1,213 @@
 <vbox style="padding: 5px;">
     <script>
-        function add() {
+        function addTabBar(which) {
+            var button = new Button();
+            button.text = "Page " + (which.tabCount + 1);
+            button.icon = "haxeui-core/styles/default/haxeui_tiny.png";
+            which.addComponent(button);
+            which.selectedIndex = which.tabCount - 1;
+        }
+        
+        function addTabView(which) {
             var vbox = new VBox();
-            vbox.text = "Page " + (tabview.pageCount + 1);
+            vbox.text = "Page " + (which.pageCount + 1);
             vbox.icon = "haxeui-core/styles/default/haxeui_tiny.png";
             
             var button = new Button();
-            button.text = "Content " + (tabview.pageCount + 1);
+            button.text = "Button " + (which.pageCount + 1);
             vbox.addComponent(button);
             
-            tabview.addComponent(vbox);
+            which.addComponent(vbox);
+            which.pageIndex = which.pageCount - 1;
+        }
+        
+        function removeTabBar(which, where) {
+            if (where == -1) {
+                where = which.selectedIndex;
+            } else if (where == -2) {
+                where = which.tabCount - 1;
+            }
+            
+            which.removeTab(where);
+        }
+        
+        function removeTabView(which, where) {
+            if (where == -1) {
+                where = which.pageIndex;
+            } else if (where == -2) {
+                where = which.pageCount - 1;
+            }
+            
+            which.removePage(where);
+        }
+        
+        function add() {
+            addTabBar(tabbar1);
+            addTabBar(tabbar2);
+            addTabBar(tabbar3);
+            
+            addTabView(tabview1);
+            addTabView(tabview2);
         }
         
         function removeFirst() {
-            if (tabview.pageCount > 0) {
-                tabview.removePage(0);
-            }
+            removeTabBar(tabbar1, 0);
+            removeTabBar(tabbar2, 0);
+            removeTabBar(tabbar3, 0);
+
+            removeTabView(tabview1, 0);
+            removeTabView(tabview2, 0);
+        }
+        
+        function removeSelected() {
+            removeTabBar(tabbar1, -1);
+            removeTabBar(tabbar2, -1);
+            removeTabBar(tabbar3, -1);
+            
+            removeTabView(tabview1, -1);
+            removeTabView(tabview2, -1);
         }
         
         function removeLast() {
-            if (tabview.pageCount > 0) {
-                tabview.removePage(tabview.pageCount - 1);
-            }
+            removeTabBar(tabbar1, -2);
+            removeTabBar(tabbar2, -2);
+            removeTabBar(tabbar3, -2);
+            
+            removeTabView(tabview1, -2);
+            removeTabView(tabview2, -2);
         }
         
-        function removeAll() {
-            tabview.removeAllPages();
+        function incIndex(amount) {
+            tabbar1.selectedIndex += amount;
+            tabbar2.selectedIndex += amount;
+            tabbar3.selectedIndex += amount;
+            
+            tabview1.pageIndex += amount;
+            tabview2.pageIndex += amount;
+        }
+        
+        function setIndex(index) {
+            tabbar1.selectedIndex = index;
+            tabbar2.selectedIndex = index;
+            tabbar3.selectedIndex = index;
+            
+            tabview1.pageIndex = index;
+            tabview2.pageIndex = index;
         }
     </script>
     
-    <tabview id="tabview" width="400" height="400">
-        <vbox text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png">
-            <button text="Content 1" />
-        </vbox>
-        <vbox text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
-            <button text="Content 2" />
-        </vbox>
-        <vbox text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png">
-            <button text="Content 3" />
-        </vbox>
-    </tabview>
+    <label id="status" width="400" />
+    
+    <tabbar2 id="tabbar1" width="400" onChange="status.text = this.id + '.selectedIndex = ' + this.selectedIndex">
+        <button text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+    </tabbar2>
+    
+    <tabbar2 id="tabbar2" width="400" onChange="status.text = this.id + '.selectedIndex = ' + this.selectedIndex">
+        <button text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 5" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 6" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 7" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 10" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+    </tabbar2>
+    
+    <tabbar2 id="tabbar3" width="400" tabPosition="bottom" onChange="status.text = this.id + '.selectedIndex = ' + this.selectedIndex">
+        <button text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 5" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 6" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 7" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+        <button text="Page 10" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+    </tabbar2>
+    
+    <tabview2 id="tabview1" width="400" height="200" onChange="status.text = this.id + '.pageIndex = ' + this.pageIndex">
+        <box text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 1" />
+        </box>    
+        <box text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 2" />
+        </box>    
+        <box text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 3" />
+        </box>    
+        <box text="Page 4" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 4" />
+        </box>    
+        <box text="Page 5" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 5" />
+        </box>    
+        <box text="Page 6" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 6" />
+        </box>    
+        <box text="Page 7" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 7" />
+        </box>    
+        <box text="Page 8" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 8" />
+        </box>    
+        <box text="Page 9" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 9" />
+        </box>    
+        <box text="Page 10" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 10" />
+        </box>    
+    </tabview2>
+    
+    <tabview2 id="tabview2" width="400" height="200" tabPosition="bottom" onChange="status.text = this.id + '.pageIndex = ' + this.pageIndex">
+        <box text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 1" />
+        </box>    
+        <box text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 2" />
+        </box>    
+        <box text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 3" />
+        </box>    
+        <box text="Page 4" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 4" />
+        </box>    
+        <box text="Page 5" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 5" />
+        </box>    
+        <box text="Page 6" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 6" />
+        </box>    
+        <box text="Page 7" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 7" />
+        </box>    
+        <box text="Page 8" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 8" />
+        </box>    
+        <box text="Page 9" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 9" />
+        </box>    
+        <box text="Page 10" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <button text="Button 10" />
+        </box>    
+    </tabview2>
     
     <hbox>
         <button text="Add" onclick="add()" />
         <button text="Remove First" onclick="removeFirst()" />
+        <button text="Remove Selected" onclick="removeSelected()" />
         <button text="Remove Last" onclick="removeLast()" />
         <button text="Remove All" onclick="removeAll()" />
     </hbox>
+    <hbox>
+        <button text="<" onclick="incIndex(-1)" />
+        <button text=">" onclick="incIndex(1)" />
+        <textfield id="newIndex" text="7" />
+        <button text="Set Index" onclick="setIndex(Std.parseInt(newIndex.text))" />
+    </hbox>    
 </vbox>
