@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module id="haxeui-core">
+    <resources>
+        <resource path="/assets/images" prefix="images" />
+    </resources>
+</module>
