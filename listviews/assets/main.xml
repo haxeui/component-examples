@@ -134,4 +134,9 @@
             </data>
         </listview2>
     </hbox>
+    
+    <!-- TODO: horizontal image list here -->
+    <listview2 width="100%" height="150">
+        
+    </listview2>
 </vbox>
