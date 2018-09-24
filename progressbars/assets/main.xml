@@ -31,7 +31,7 @@
     </hbox>
     
     <hbox>
-        <textfield id="newValue" value="50" />
+        <textfield id="newValue" text="50" />
         <button text="Set" onclick="set(Std.parseInt(newValue.text))" />
     </hbox>    
     <label id="progressValue" />
