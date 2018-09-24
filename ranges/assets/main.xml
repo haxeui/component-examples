@@ -1,0 +1,37 @@
+<vbox style="padding: 5px;">
+    <script>
+        function set(value) {
+            range1.start = value;
+            range2.start = value;
+            range3.start = value;
+            range4.start = value;
+            range5.start = value;
+            range6.start = value;
+            range7.start = value;
+            range8.start = value;
+        }
+    </script>
+    
+    <hbox>
+        <vbox>
+            <range id="range1" start="66" end="100" onchange="rangeValue.text = 'Value is: ' + this.start" />
+            <range id="range2" end="33" onchange="rangeValue.text = 'Value is: ' + this.end" />
+            <range id="range3" start="33" end="66" onchange="rangeValue.text = 'Value is: ' + this.start + ' - ' + this.end" />
+            <range id="range4" start="33" end="66" allowInteraction="true" onchange="rangeValue.text = 'Value is: ' + this.start + ' - ' + this.end" />
+        </vbox>
+        
+        <hbox>
+            <range id="range5" direction="vertical" start="66" end="100" onchange="rangeValue.text = 'Value is: ' + this.start" />
+            <range id="range6" direction="vertical" end="33" onchange="rangeValue.text = 'Value is: ' + this.end" />
+            <range id="range7" direction="vertical" start="33" end="66" onchange="rangeValue.text = 'Value is: ' + this.start + ' - ' + this.end" />
+            <range id="range8" direction="vertical" start="33" end="66" allowInteraction="true" onchange="rangeValue.text = 'Value is: ' + this.start + ' - ' + this.end" />
+        </hbox>
+    </hbox>
+    
+    <hbox>
+        <textfield id="newValue" text="50" />
+        <button text="Set" onclick="set(Std.parseInt(newValue.text))" />
+    </hbox>    
+    <label id="rangeValue" />
+</vbox>
+    
