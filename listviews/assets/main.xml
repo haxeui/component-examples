@@ -46,7 +46,7 @@
     
     <hbox width="100%">
         <vbox width="100%">
-            <listview2 id="lv1" width="100%" height="200">
+            <listview2 id="lv1" width="100%" height="200" virtual="true">
                 <data>
                     <item value="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
                     <item value="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
@@ -74,7 +74,7 @@
             <!--
                 TODO: item renderer component events not linked up (no event!)
             -->
-            <listview2 id="lv2" width="100%" height="200">
+            <listview2 id="lv2" width="100%" height="200" virtual="true">
                 <itemrenderer width="100%">
                     <hbox width="100%">
                         <checkbox id="check" style="vertical-align:center;" />
@@ -111,7 +111,7 @@
             </listview2>
         </vbox>
         
-        <listview2 width="200" height="100%">
+        <listview2 width="200" height="100%" virtual="true">
             <itemrenderer width="100%">
                 <vbox width="100%">
                     <label id="title" width="100%" style="text-align:center" />
