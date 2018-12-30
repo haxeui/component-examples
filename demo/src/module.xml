@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <resources>
+        <resource path="assets/icons" prefix="icons" />
+    </resources>
+</module>

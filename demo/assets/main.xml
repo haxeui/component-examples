@@ -1,0 +1,29 @@
+<vbox width="100%" height="100%">
+    <import source="menu.xml" />
+    
+    <box width="100%" height="100%" style="padding: 5px;">
+        <tabview width="100%" height="100%">
+            <vbox text="Basic" icon="icons/ui-buttons.png" width="100%" height="100%">
+                <import source="basic.xml" />
+            </vbox>
+            <vbox text="Advanced" icon="icons/application-dialog.png" width="100%" height="100%">
+                <import source="advanced.xml" />
+            </vbox>
+            <vbox text="Containers" icon="icons/ui-accordion.png" width="100%" height="100%">
+                <import source="containers.xml" />
+            </vbox>
+            <vbox text="Layouts" icon="icons/grid.png" width="100%" height="100%">
+                <import source="layouts.xml" />
+            </vbox>
+            <vbox text="Scripting" icon="icons/blue-document-haxe.png" width="100%" height="100%">
+                <import source="layouts.xml" />
+            </vbox>
+            <vbox text="Binding" icon="icons/blue-document-xml.png" width="100%" height="100%">
+                <import source="layouts.xml" />
+            </vbox>
+            <vbox text="Custom" icon="icons/ui-scroll-pane-block.png" width="100%" height="100%">
+                <import source="layouts.xml" />
+            </vbox>
+        </tabview>
+    </box>
+</vbox>

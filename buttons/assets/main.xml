@@ -80,6 +80,7 @@
     
     </style>
     
+    
     <hbox>
         <button text="Basic" onclick="this.text='Clicked'" />
         <button text="Left" icon="haxeui-core/styles/default/haxeui_small.png" />
@@ -96,6 +97,7 @@
     </hbox>
     
     <hbox>
+        <button text="Style" style="icon: haxeui-core/styles/default/haxeui_small.png" />
         <button text="HTTP" icon="http://i.imgur.com/Qz2EVXR.png" />
         <button text="File" icon="file://Z:/HaxeUI2/haxeui-examples/component-examples/buttons/assets/haxeui_96.png" />
         <button text="Asset" icon="haxeui-core/styles/default/haxeui_small.png" />

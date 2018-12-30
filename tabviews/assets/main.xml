@@ -118,8 +118,9 @@
         <button text="Page 10" icon="haxeui-core/styles/default/haxeui_tiny.png" />
     </tabbar2>
     
-    <tabbar2 id="tabbar3" width="400" tabPosition="bottom" onChange="status.text = this.id + '.selectedIndex = ' + this.selectedIndex">
-        <button text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+    <tabbar2 id="tabbar3" width="400" onChange="status.text = this.id + '.selectedIndex = ' + this.selectedIndex">
+        <!--
+        <button text="Page 1 THIS ONE" icon="haxeui-core/styles/default/haxeui_tiny.png" />
         <button text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
         <button text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
         <button text="Page 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
@@ -129,6 +130,7 @@
         <button text="Page 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
         <button text="Page 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
         <button text="Page 10" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            -->
     </tabbar2>
     
     <tabview2 id="tabview1" width="400" height="200" onChange="status.text = this.id + '.pageIndex = ' + this.pageIndex">
@@ -165,12 +167,46 @@
     </tabview2>
     
     <tabview2 id="tabview2" width="400" height="200" tabPosition="bottom" onChange="status.text = this.id + '.pageIndex = ' + this.pageIndex">
-        <box text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png">
-            <button text="Button 1" />
-        </box>    
-        <box text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
-            <button text="Button 2" />
-        </box>    
+        <vbox text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <tabview2 width="300" height="100" tabPosition="bottom">
+                <box text="sub page 1">
+                    <button text="bob" />
+                </box>
+                <box text="sub page 2">
+                    <button text="bob" />
+                </box>
+                <box text="sub page 3">
+                    <button text="bob" />
+                </box>
+            </tabview2>
+            
+            
+            <tabbar2 width="300"  tabPosition="bottom">
+                <button text="Tab 1" />
+                <button text="Tab 2" />
+                <button text="Tab 3" />
+            </tabbar2>
+        </vbox>    
+        <vbox text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
+            <tabview2 width="300" height="100" tabPosition="bottom">
+                <box text="sub page 1">
+                    <button text="bob" />
+                </box>
+                <box text="sub page 2">
+                    <button text="bob" />
+                </box>
+                <box text="sub page 3">
+                    <button text="bob" />
+                </box>
+            </tabview2>
+            
+            
+            <tabbar2 width="300"  tabPosition="bottom">
+                <button text="Tab 1" />
+                <button text="Tab 2" />
+                <button text="Tab 3" />
+            </tabbar2>
+        </vbox>    
         <box text="Page 3" icon="haxeui-core/styles/default/haxeui_tiny.png">
             <button text="Button 3" />
         </box>    

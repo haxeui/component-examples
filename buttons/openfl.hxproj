@@ -15,25 +15,23 @@
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
-    <class path="C:\Servers\Haxe\haxe\lib\lime\6,0,1" />
+    <class path="C:\Servers\Haxe\haxe\lib\lime\7,0,0\src" />
     <class path="C:\Servers\Haxe\haxe\lib\actuate\1,8,7" />
     <class path="Z:\HaxeUI2\backends\haxeui-openfl" />
     <class path="Z:\HaxeUI2\haxeui-core" />
-    <class path="C:\Servers\Haxe\haxe\lib\hscript\2,1,1" />
-    <class path="C:\Servers\Haxe\haxe\lib\openfl\7,0,0\src" />
+    <class path="C:\Servers\Haxe\haxe\lib\hscript\2,2,0" />
+    <class path="C:\Servers\Haxe\haxe\lib\openfl\8,4,1\src" />
     <class path="src" />
-    <class path="C:\Servers\Haxe\haxe\lib\openfl\7,0,0\src\externs\core\openfl" />
-    <class path="C:\Servers\Haxe\haxe\lib\openfl\7,0,0\src\externs\extras" />
     <class path="build\openfl\windows\haxe" />
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="lime=6.0.1&#xA;actuate=1.8.7&#xA;haxeui-openfl=0.0.2&#xA;haxeui-core=0.0.3&#xA;hscript=2.1.1&#xA;openfl=7.0.0&#xA;tools=6.0.1&#xA;no-compilation&#xA;native&#xA;lime-native&#xA;lime-vorbis&#xA;openfl-native&#xA;lime-cffi&#xA;windows&#xA;desktop&#xA;display" />
+    <option directives="lime=7.0.0&#xA;actuate=1.8.7&#xA;haxeui-openfl=0.0.2&#xA;haxeui-core=0.0.4&#xA;hscript=2.2.0&#xA;openfl=8.4.1&#xA;lime-harfbuzz&#xA;lime-openal&#xA;tools=7.0.0&#xA;lime-cairo&#xA;lime-opengl&#xA;no-compilation&#xA;native&#xA;lime-curl&#xA;lime-native&#xA;lime-vorbis&#xA;openfl-native&#xA;lime-cffi&#xA;windows&#xA;desktop&#xA;display" />
     <option flashStrict="False" />
     <option noInlineOnDebug="False" />
     <option mainClass="ApplicationMain" />
     <option enabledebug="False" />
-    <option additional="--macro lime.Lib.extraParams()&#xA;--macro openfl._internal.utils.ExtraParams.include()&#xA;--remap flash:openfl&#xA;-debug " />
+    <option additional="--macro lime._internal.macros.DefineMacro.run()&#xA;--macro openfl._internal.utils.ExtraParams.include()&#xA;--remap flash:openfl&#xA;-debug " />
   </build>
   <!-- haxelib libraries -->
   <haxelib>

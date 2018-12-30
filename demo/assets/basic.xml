@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%" height="100%">
+    <hbox width="100%" height="100%">
+        <vbox height="100%">
+            <grid columns="2">
+                <button text="Left" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <button text="Right" icon="haxeui-core/styles/default/haxeui_tiny.png" iconPosition="right" />
+                
+                <button text="Top" icon="haxeui-core/styles/default/haxeui_tiny.png" iconPosition="top" width="100%" />
+                <button text="Bottom" icon="haxeui-core/styles/default/haxeui_tiny.png" iconPosition="bottom" width="100%" />
+            </grid> 
+            <button text="Button" style="color: red;font-size:18px;" width="100%" />
+            <label text="Label" style="color: blue;font-size:18px;" width="100%" />
+            <textfield text="Textfield" icon="haxeui-core/styles/default/haxeui_tiny.png" width="100%" />
+            <textarea width="100%" text="Text area\nLine 1\nLine 2\nLine 3 - this line should wrap depending on settings" height="100%" />
+        </vbox>    
+
+        <vbox>
+            <hbox>
+                <checkbox text="Check 1" />
+                <checkbox text="Check 2" selected="true" />
+                <checkbox text="Check 3" selected="true" />
+            </hbox>
+            
+            <hbox>
+                <optionbox text="Option 1A" />
+                <optionbox text="Option 2A" selected="true" />
+                <optionbox text="Option 3A" />
+            </hbox>
+            
+            <hbox>
+                <optionbox text="Option 1B" group="groupB" />
+                <optionbox text="Option 2B" group="groupB" />
+                <optionbox text="Option 3B" group="groupB" selected="true" />
+            </hbox>
+            
+            <switch text="Setting 1" width="100%" />
+            <switch text="Setting 2" width="100%" selected="true" />
+            
+            <hbox>
+                <vbox>
+                    <range start="25" end="75" allowInteraction="true" />
+                    <progress pos="50" allowInteraction="true" />
+                    <progress indeterminate="true" />
+                    <slider start="25" end="75" />
+                    <slider pos="50" />
+                    <hbox>
+                        <numberstepper pos="100" />
+                        <numberstepper pos="-100" />
+                    </hbox>    
+                </vbox>    
+                
+                <range start="25" end="75" allowInteraction="true" direction="vertical" />
+                <progress pos="50" allowInteraction="true" direction="vertical" />
+                <progress indeterminate="true" direction="vertical" />
+                <slider start="25" end="75" direction="vertical" />
+                <slider pos="50" direction="vertical" />
+            </hbox>    
+        </vbox>
+        
+        <vbox width="100%" height="100%">
+            <dropdown text="Select" width="100%">
+                <data>
+                    <item value="Item 1" />
+                    <item value="Item 2" />
+                    <item value="Item 3" />
+                    <item value="Item 4" />
+                    <item value="Item 5" />
+                    <item value="Item 6" />
+                </data>
+            </dropdown>  
+            
+            <scrollview width="100%" height="70">
+                <hbox>
+                    <button text="Button" />
+                    <hbox>
+                        <image resource="haxeui-core/styles/default/haxeui_tiny.png" />
+                        <vbox>
+                            <checkbox text="Check" />
+                            <optionbox text="Option" />
+                        </vbox>    
+                    </hbox>    
+                    <button text="Button" />
+                    <button text="Button" />
+                    <button text="Button" />
+                </hbox>
+            </scrollview>
+            
+            <scrollview width="100%" height="100%" contentWidth="100%">
+                <vbox width="100%">
+                    <button text="Button" />
+                    <hbox>
+                        <image resource="haxeui-core/styles/default/haxeui_tiny.png" />
+                        <checkbox text="Check" />
+                        <optionbox text="Option" />
+                    </hbox>
+                    <button text="Button" width="100%" />
+                    <slider width="100%" pos="25" />
+                    <button text="Button" horizontalAlign="right" />
+                    <button text="Button" horizontalAlign="center" />
+                    <button text="Button" />
+                </vbox>
+            </scrollview>    
+        </vbox>
+        
+    </hbox>    
+</vbox>

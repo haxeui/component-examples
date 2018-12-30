@@ -1,4 +1,4 @@
-<scrollview width="100%" height="100%" contentWidth="100%" style="border-size:0;">
+<scrollview2 width="100%" height="100%" contentWidth="100%" style="border-size:0;background-color: white;">
     <vbox id="main" width="100%" style="padding: 5px;">
         <style source="main.css" />
         
@@ -49,4 +49,4 @@
             <label text="Footer" verticalAlign="center" />
         </box>
     </vbox>
-</scrollview>    
+</scrollview2>    
