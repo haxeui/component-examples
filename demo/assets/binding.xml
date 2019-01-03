@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox>
+    <hbox>
+        <vbox>
+            <button id="bindingButton" text="Button" />
+            <label text="The button label is: ${bindingButton.text}" />
+            <slider id="bindingSlider" pos="50" />
+            <label text="The slider value is: ${bindingSlider.pos} of ${bindingSlider.max}" />
+            
+            <hbox>
+                <checkbox text="0-33" selected="${bindingSlider2.pos > 0 && bindingSlider2.pos < 33}" />
+                <checkbox text="34-66" selected="${bindingSlider2.pos > 33 && bindingSlider2.pos < 67}" />
+                <checkbox text="67-100" selected="${bindingSlider2.pos > 66 && bindingSlider2.pos <= 100}" />
+            </hbox>
+            <slider id="bindingSlider2" pos="50" />
+        </vbox>
+            
+        <hbox>
+            <slider id="bindingSlider3" pos="50" direction="vertical" />
+            <slider direction="vertical" pos="${bindingSlider3.pos}" />
+            <slider direction="vertical" pos="${bindingSlider3.pos / 2}" />
+            <slider direction="vertical" pos="${bindingSlider3.pos / 3}" />
+            <progress direction="vertical" pos="${bindingSlider3.pos}" />
+            <progress direction="vertical" pos="${bindingSlider3.pos / 2}" />
+            <progress direction="vertical" pos="${bindingSlider3.pos / 3}" />
+        </hbox>
+            
+        <vbox>
+            <slider width="100" id="bindingSlider4" max="${bindingListView.dataSource.size - 1}" />
+            <listview id="bindingListView" width="100" height="150" selectedIndex="${bindingSlider4.pos}">
+                <data>
+                    <item value="Item 1" />
+                    <item value="Item 2" />
+                    <item value="Item 3" />
+                    <item value="Item 4" />
+                    <item value="Item 5" />
+                    <item value="Item 6" />
+                    <item value="Item 7" />
+                    <item value="Item 8" />
+                    <item value="Item 9" />
+                    <item value="Item 10" />
+                </data>
+            </listview>
+            <dropdown id="bindingDropDown" width="100" selectedIndex="${bindingSlider4.pos}">
+                <data>
+                    <item value="Item 1" />
+                    <item value="Item 2" />
+                    <item value="Item 3" />
+                    <item value="Item 4" />
+                    <item value="Item 5" />
+                    <item value="Item 6" />
+                    <item value="Item 7" />
+                    <item value="Item 8" />
+                    <item value="Item 9" />
+                    <item value="Item 10" />
+                </data>
+            </dropdown>
+            <button width="100%" text="Add Item" onclick="bindingListView.dataSource.add({value: 'New Item'});" />
+        </vbox>
+    </hbox>
+</vbox>

@@ -19,32 +19,11 @@
                 <import source="layouts.xml" />
             </vbox>
             <vbox text="Binding" icon="icons/blue-document-xml.png" width="100%" height="100%">
-                <import source="layouts.xml" />
+                <import source="binding.xml" />
             </vbox>
             <vbox text="Custom" icon="icons/ui-scroll-pane-block.png" width="100%" height="100%">
                 <import source="layouts.xml" />
             </vbox>
         </tabview>
     </box>
-
-    <!--
-    <tabview width="100%" height="100%">
-        <vbox text="Page 1" />
-        <vbox text="Page 2" />
-        <vbox text="Page 3" />
-        <vbox text="Page 4" />
-    </tabview>
-        -->
-
-    <!--
-    <tabbar width="200">
-        <button text="The Page 1" />
-        <button text="The Page 2" />
-    </tabbar>
-        -->
-    
-    <!--
-    <button id="test" text="Should Change" />
-    <button id="dummy" text="Change It!" onclick="test.native = false;" />
-        -->
 </vbox>
