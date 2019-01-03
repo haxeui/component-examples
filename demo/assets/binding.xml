@@ -4,7 +4,7 @@
         <vbox>
             <button id="bindingButton" text="Button" />
             <label text="The button label is: ${bindingButton.text}" />
-            <slider id="bindingSlider" pos="50" />
+            <slider id="bindingSlider" pos="50" precision="0" />
             <label text="The slider value is: ${bindingSlider.pos} of ${bindingSlider.max}" />
             
             <hbox>
