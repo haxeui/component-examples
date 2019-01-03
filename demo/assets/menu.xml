@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <menubar width="100%">
     <menu text="File">
-        
+        <menuitem text="Item 1" />
     </menu>
     <menu text="Edit">
-        
+        <menuitem text="Item 1" />
     </menu>
     <menu text="Help">
-        
+        <menuitem text="Item 1" />
     </menu>
 </menubar>

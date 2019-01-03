@@ -59,6 +59,7 @@
         </vbox>
         
         <vbox width="100%" height="100%">
+            <!--
             <dropdown text="Select" width="100%">
                 <data>
                     <item value="Item 1" />
@@ -69,6 +70,7 @@
                     <item value="Item 6" />
                 </data>
             </dropdown>  
+                -->
             
             <scrollview width="100%" height="70">
                 <hbox>
