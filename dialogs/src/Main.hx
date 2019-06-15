@@ -3,6 +3,7 @@ package ;
 import haxe.ui.HaxeUIApp;
 import haxe.ui.Toolkit;
 import haxe.ui.components.Button;
+import haxe.ui.components.Image;
 import haxe.ui.components.Label;
 import haxe.ui.containers.dialogs.Dialog;
 import haxe.ui.containers.dialogs.MessageBox;
@@ -50,6 +51,20 @@ class Main {
                 var dialog = new CustomDialog();
                 dialog.width = 500;
                 dialog.show();
+            }
+
+            var customModalDialogButton = main.findComponent("customModalDialogButton", Button);
+            customModalDialogButton.onClick = function(e) {
+                var image = new Image();
+                image.resource = "haxeui-core/styles/default/haxeui.png";
+                Toolkit.dialog(image);
+            }
+            
+            var customContentButton = main.findComponent("customContentButton", Button);
+            customContentButton.onClick = function(e) {
+                Toolkit.dialog(ComponentMacros.buildComponent("assets/custom-content.xml"), "Custom", DialogButton.CLOSE | DialogButton.APPLY, function(button) {
+                    trace("'" + button + "' clicked");
+                });
             }
             
             app.start();

@@ -4,7 +4,11 @@
         <button text="Question" id="questionButton" />
         <button text="Warning" id="warningButton" />
         <button text="Error" id="errorButton" />
+    </hbox>   
+    <hbox>
+        <button text="Custom Non Modal" id="customNonModalDialogButton" />
+        <button text="Custom Modal" id="customModalDialogButton" />
+        <button text="Custom Content" id="customContentButton" />
     </hbox>    
-    <button text="Custom Non Modal" id="customNonModalDialogButton" />
     <button text="From Script" onclick="Screen.instance.messageBox('From script', 'Some title', MessageBoxType.WARNING)" />
 </vbox>

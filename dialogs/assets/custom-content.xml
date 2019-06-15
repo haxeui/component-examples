@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%">
+    <button text="Button 1" width="100%" />
+    <button text="Button 2" width="100%" />
+    <button text="Button 3" width="100%" />
+</vbox>
