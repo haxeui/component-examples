@@ -1,0 +1,10 @@
+<vbox style="padding: 5px;">
+    <hbox>
+        <button text="Info" id="infoButton" />
+        <button text="Question" id="questionButton" />
+        <button text="Warning" id="warningButton" />
+        <button text="Error" id="errorButton" />
+    </hbox>    
+    <button text="Custom Non Modal" id="customNonModalDialogButton" />
+    <button text="From Script" onclick="Screen.instance.messageBox('From script', 'Some title', MessageBoxType.WARNING)" />
+</vbox>
