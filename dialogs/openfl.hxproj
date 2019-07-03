@@ -22,15 +22,16 @@
     <class path="C:\SDK\haxe\lib\hscript\2,3,0" />
     <class path="C:\SDK\haxe\lib\openfl\8,9,1\src" />
     <class path="src" />
+    <class path="build\openfl\neko\haxe" />
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="lime=7.5.0&#xA;actuate=1.8.9&#xA;haxeui-openfl=0.0.2&#xA;haxeui-core=0.0.3&#xA;hscript=2.3.0&#xA;openfl=8.9.1&#xA;lime-harfbuzz&#xA;lime-openal&#xA;tools=7.5.0&#xA;ANDROID_SETUP=true&#xA;lime-cairo&#xA;ANDROID_NDK_ROOT=C:\SDK\android-ndk-r19c&#xA;lime-opengl&#xA;no-compilation&#xA;native&#xA;lime-curl&#xA;lime-native&#xA;lime-vorbis&#xA;openfl-native&#xA;lime-cffi&#xA;windows&#xA;desktop" />
+    <option directives="lime=7.5.0&#xA;actuate=1.8.9&#xA;haxeui-openfl=0.0.2&#xA;haxeui-core=0.0.3&#xA;hscript=2.3.0&#xA;openfl=8.9.1&#xA;lime-openal&#xA;ANDROID_SETUP=true&#xA;ANDROID_NDK_ROOT=C:\SDK\android-ndk-r19c&#xA;native&#xA;lime-curl&#xA;openfl-native&#xA;lime-harfbuzz&#xA;tools=7.5.0&#xA;lime-cairo&#xA;lime-opengl&#xA;no-compilation&#xA;lime-native&#xA;lime-vorbis&#xA;lime-cffi&#xA;fdb&#xA;windows&#xA;desktop" />
     <option flashStrict="False" />
     <option noInlineOnDebug="False" />
     <option mainClass="ApplicationMain" />
     <option enabledebug="False" />
-    <option additional="--macro lime._internal.macros.DefineMacro.run()&#xA;--macro openfl._internal.macros.ExtraParams.include()&#xA;--remap flash:openfl&#xA;--no-output " />
+    <option additional="--macro lime._internal.macros.DefineMacro.run()&#xA;--macro openfl._internal.macros.ExtraParams.include()&#xA;--remap flash:openfl" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>

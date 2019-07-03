@@ -46,7 +46,7 @@
     
     <hbox width="100%">
         <vbox width="100%">
-            <listview2 id="lv1" width="100%" height="200" virtual="true">
+            <listview id="lv1" width="100%" height="200" virtual="false">
                 <data>
                     <item value="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
                     <item value="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
@@ -69,12 +69,12 @@
                     <item value="Item 19" icon="haxeui-core/styles/default/haxeui_tiny.png" />
                     <item value="Item 20" icon="haxeui-core/styles/default/haxeui_tiny.png" />
                 </data>
-            </listview2>
+            </listview>
             
             <!--
                 TODO: item renderer component events not linked up (no event!)
             -->
-            <listview2 id="lv2" width="100%" height="200" virtual="true">
+            <listview id="lv2" width="100%" height="200" virtual="false">
                 <itemrenderer width="100%">
                     <hbox width="100%">
                         <checkbox id="check" style="vertical-align:center;" />
@@ -108,10 +108,10 @@
                     <item value="Item 19" subLabel="Sub Item 19" icon="haxeui-core/styles/default/haxeui_small.png" />
                     <item value="Item 20" subLabel="Sub Item 20" icon="haxeui-core/styles/default/haxeui_small.png" />
                 </data>
-            </listview2>
+            </listview>
         </vbox>
         
-        <listview2 width="200" height="100%" virtual="true">
+        <listview width="200" height="100%" virtual="false">
             <itemrenderer width="100%">
                 <vbox width="100%">
                     <label id="title" width="100%" style="text-align:center" />
@@ -132,11 +132,11 @@
                 <item title="Beach #3" image="images/9.png" />
                 <item title="Desert #2" image="images/10.png" />
             </data>
-        </listview2>
+        </listview>
     </hbox>
     
     <!-- TODO: horizontal image list here -->
-    <listview2 width="100%" height="150">
+    <listview width="100%" height="150">
         
-    </listview2>
+    </listview>
 </vbox>
