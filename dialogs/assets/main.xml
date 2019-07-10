@@ -1,4 +1,5 @@
 <vbox style="padding: 5px;">
+    <image resource="haxeui-core/styles/default/haxeui.png" />
     <hbox>
         <button text="Info" id="infoButton" />
         <button text="Question" id="questionButton" />
@@ -11,4 +12,9 @@
         <button text="Custom Content" id="customContentButton" />
     </hbox>    
     <button text="From Script" onclick="Screen.instance.messageBox('From script', 'Some title', MessageBoxType.WARNING)" />
+    
+    <hbox>
+        <button id="test" text="Test" />
+        <button id="test2" text="Test2" />
+    </hbox>
 </vbox>
