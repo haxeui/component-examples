@@ -1,12 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <menubar width="100%">
-    <menu text="File">
+    <menu text="Menu 1">
         <menuitem text="Item 1" />
+        <menuitem text="Item 2" />
+        <menuitem text="Item 3" />
+        <menuseparator />
+        <menu text="Sub Menu">
+            <menuitem text="Item 1" />
+            <menuitem text="Item 2" />
+            <menu text="Another Sub Menu">
+                <menuitem text="Item 1" />
+                <menuitem text="Item 2" />
+                <menuitem text="Item 3" />
+                <menuitem text="Item 4" />
+                <menuitem text="Item 5" />
+            </menu>    
+            <menuitem text="Item 4" />
+            <menuitem text="Item 5" />
+        </menu>    
+        <menu text="Options">
+            <menuoptionbox text="Option 1A" group="A" selected="true" />
+            <menuoptionbox text="Option 2A" group="A" />
+            <menuoptionbox text="Option 3A" group="A" />
+            <menuseparator />
+            <menuoptionbox text="Option 1B" group="B" />
+            <menuoptionbox text="Option 2B" group="B" selected="true" />
+            <menuoptionbox text="Option 3B" group="B" />
+        </menu>    
+        <menu text="Checkboxes">
+            <menucheckbox text="Check 1" selected="true" />
+            <menucheckbox text="Check 2" />
+            <menucheckbox text="Check 3" />
+        </menu>    
+        <menuseparator />
+        <menuitem text="Item 4" />
+        <menuitem text="Item 5" />
     </menu>
-    <menu text="Edit">
+    <menu text="Menu 2">
         <menuitem text="Item 1" />
+        <menuitem text="Item 2" />
+        <menuitem text="Item 3" />
+        <menuitem text="Item 4" />
+        <menuitem text="Item 5" />
     </menu>
-    <menu text="Help">
+    <menu text="Menu 3">
         <menuitem text="Item 1" />
+        <menuitem text="Item 2" />
+        <menuitem text="Item 3" />
+        <menuitem text="Item 4" />
+        <menuitem text="Item 5" />
     </menu>
 </menubar>

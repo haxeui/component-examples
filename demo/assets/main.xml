@@ -15,12 +15,14 @@
             <vbox text="Layouts" icon="icons/grid.png" width="100%" height="100%">
                 <import source="layouts.xml" />
             </vbox>
+            <!--
             <vbox text="Scripting" icon="icons/blue-document-haxe.png" width="100%" height="100%">
                 <import source="layouts.xml" />
             </vbox>
             <vbox text="Binding" icon="icons/blue-document-xml.png" width="100%" height="100%">
                 <import source="binding.xml" />
             </vbox>
+            -->    
             <vbox text="Custom" icon="icons/ui-scroll-pane-block.png" width="100%" height="100%">
                 <import source="layouts.xml" />
             </vbox>
