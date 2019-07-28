@@ -1,5 +1,8 @@
 <vbox style="padding: 5px;">
     <image resource="haxeui-core/styles/default/haxeui.png" />
+    
+    <checkbox id="customFooter" text="Custom Footer" />
+    
     <hbox>
         <button text="Info" id="infoButton" />
         <button text="Question" id="questionButton" />
