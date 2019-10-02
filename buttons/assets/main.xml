@@ -44,7 +44,7 @@
         background-image-slice: 10px 10px 30px 84px;
         border: none;
         background-color: white;
-        color: #666666 !important;
+        color: #666666;
         padding-top: 10px;
         padding-left: 15px;
         padding-right: 15px;
@@ -61,7 +61,7 @@
         background-image-slice: 10px 10px 30px 84px;
         border: none;
         background-color: white;
-        color: #FFFFFF !important;
+        color: #FFFFFF;
     }
 
     .bitmapButton:down {
@@ -70,7 +70,7 @@
         background-image-slice: 10px 10px 30px 84px;
         border: none;
         background-color: white;
-        color: #FCFCFC !important;
+        color: #FCFCFC;
     }
 
     .bitmapButton:down .label {
