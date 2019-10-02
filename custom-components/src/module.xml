@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <components>
+        <class folder="assets/custom-components" />
+    </components>
+    
+    <scriptlets>
+        <import class="Std" keep="true" static="true" />
+    </scriptlets>
+</module>

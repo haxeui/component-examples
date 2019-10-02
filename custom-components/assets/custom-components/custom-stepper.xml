@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hbox>
+    <script>
+        function inc(n) {
+            theValue.text = Std.parseInt(theValue.text) + n;
+        }
+    </script>
+    <textfield id="theValue" text="0" />
+    <button text="-" onclick="inc(-1)" width="30" />
+    <button text="+" onclick="inc(1)" width="30" />
+</hbox>
