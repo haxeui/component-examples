@@ -1,0 +1,54 @@
+<vbox width="100%">
+    <menubar id="mainMenu" width="100%" onmenuselected="trace('Item selected: ' + event.menuItem.text + ', ' + event.menuItem.id)">
+        <menu text="Menu 1">
+            <menu-item text="Menu Item 1A" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <menu-item text="Menu Item 1B" />
+            <menu text="Menu Item 1C">
+                <menu-item text="Sub Item 1" />
+                <menu-item text="Sub Item 2" />
+                <menu-item text="Sub Item 3" />
+                <menu text="Sub Item 4">
+                    <menu-item text="Sub Sub Item 1" />
+                    <menu-item text="Sub Sub Item 2" />
+                    <menu-item text="Sub Sub Item 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                    <menu-item text="Sub Sub Item 4" />
+                    <menu-item text="Sub Sub Item 5" />
+                </menu>    
+                <menu-item text="Sub Item 5" />
+            </menu>    
+            <menu-item text="Menu Item 1D" />
+            <menu-item text="Menu Item 1E" />
+            <menu-separator />
+            <menu-item text="Menu Item 1F" />
+            <menu-item text="Menu Item 1G" />
+            <menu text="Menu Item 1H" icon="haxeui-core/styles/default/haxeui_tiny.png">
+                <menu-item text="Sub Item 1" />
+                <menu-item text="Sub Item 2" />
+                <menu-item text="Sub Item 3" />
+                <menu text="Sub Item 4">
+                    <menu-item text="Sub Sub Item 1" />
+                    <menu-item text="Sub Sub Item 2" />
+                    <menu-item text="Sub Sub Item 3" />
+                    <menu-item text="Sub Sub Item 4" />
+                    <menu-item text="Sub Sub Item 5" />
+                </menu>    
+                <menu-item text="Sub Item 5" />
+            </menu>    
+            <menu-item text="Menu Item 1I" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            <menu-item text="Menu Item 1J" />
+        </menu>
+        <menu text="Menu 2">
+            <menu-checkbox text="Check 1" selected="true" />
+            <menu-checkbox text="Check 2" />
+            <menu-checkbox text="Check 3" />
+            <menu-separator />
+            <menu-optionbox text="Option 1A" />
+            <menu-optionbox text="Option 1B" selected="true" />
+            <menu-optionbox text="Option 1C" />
+            <menu-separator />
+            <menu-optionbox text="Option 2A" group="g2" />
+            <menu-optionbox text="Option 2B" group="g2" />
+            <menu-optionbox text="Option 2C" group="g2" selected="true" />
+        </menu>    
+    </menubar>
+</vbox>

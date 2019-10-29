@@ -167,3 +167,4 @@ pip-log.txt
 dox.xml
 
 Kha/
+! /**/bin/html5/*.html
