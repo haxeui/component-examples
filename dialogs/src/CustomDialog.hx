@@ -8,6 +8,6 @@ class CustomDialog extends Dialog {
         super();
         title = "Custom Dialog";
         modal = false;
-        buttons =  "Custom Action" | DialogButton.APPLY | DialogButton.CANCEL;
+        buttons =  DialogButton.APPLY | DialogButton.CANCEL;
     }
 }
