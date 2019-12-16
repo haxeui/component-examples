@@ -1,0 +1,57 @@
+<vbox style="padding: 5px;">
+
+    <style>
+    
+    </style>
+    
+    <property-grid width="250" height="300">
+        <property-group text="Primary Group">
+            <property text="String Property" value="Value 1" />
+            <property text="Bool Property" type="boolean" value="true" />
+            <property text="Int Property" type="int" value="101" />
+            <property text="List Property" type="list" value="Item 1">
+                <data>
+                    <item value="Item 1" />
+                    <item value="Item 2" />
+                    <item value="Item 3" />
+                    <item value="Item 4" />
+                    <item value="Item 5" />
+                    <item value="Item 6" />
+                </data>
+            </property>    
+        </property-group>
+        
+        <property-group text="Secondary Group">
+            <property text="String Property" value="Value 2" />
+            <property text="Bool Property" type="boolean" value="false" />
+            <property text="Int Property" type="int" value="102" />
+            <property text="List Property" type="list" value="Item 2">
+                <data>
+                    <item value="Item 1" />
+                    <item value="Item 2" />
+                    <item value="Item 3" />
+                    <item value="Item 4" />
+                    <item value="Item 5" />
+                    <item value="Item 6" />
+                </data>
+            </property>    
+        </property-group>
+        
+        <property-group text="Tertiary Group">
+            <property text="String Property" value="Value 3" />
+            <property text="Bool Property" type="boolean" value="true" />
+            <property text="Int Property" type="int" value="103" />
+            <property text="List Property" type="list" value="Item 3">
+                <data>
+                    <item value="Item 1" />
+                    <item value="Item 2" />
+                    <item value="Item 3" />
+                    <item value="Item 4" />
+                    <item value="Item 5" />
+                    <item value="Item 6" />
+                </data>
+            </property>    
+        </property-group>
+    </property-grid>
+    
+</vbox>

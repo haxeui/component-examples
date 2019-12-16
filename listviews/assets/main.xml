@@ -46,7 +46,7 @@
     
     <hbox width="100%">
         <vbox width="100%">
-            <listview id="lv1" width="100%" height="200" virtual="false">
+            <listview id="lv1" width="100%" height="200" native="false">
                 <data>
                     <item value="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
                     <item value="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
@@ -74,7 +74,7 @@
             <!--
                 TODO: item renderer component events not linked up (no event!)
             -->
-            <listview id="lv2" width="100%" height="200" virtual="false">
+            <listview id="lv2" width="100%" height="200" native="false" onComponentEvent="trace(1)">
                 <itemrenderer width="100%">
                     <hbox width="100%">
                         <checkbox id="check" style="vertical-align:center;" />
@@ -83,7 +83,7 @@
                             <label id="value" width="100%" style="font-bold: true;font-underline: true;" />
                             <label id="subLabel" width="100%" style="font-italic: true;color: #888888;" />
                         </vbox>    
-                        <button text="Action" style="vertical-align:center;" />
+                        <button id="actionButton" text="Action" style="vertical-align:center;" />
                     </hbox>    
                 </itemrenderer>
                 <data>
@@ -111,7 +111,7 @@
             </listview>
         </vbox>
         
-        <listview width="200" height="100%" virtual="false">
+        <listview width="200" height="100%" native="false">
             <itemrenderer width="100%">
                 <vbox width="100%">
                     <label id="title" width="100%" style="text-align:center" />
@@ -134,9 +134,4 @@
             </data>
         </listview>
     </hbox>
-    
-    <!-- TODO: horizontal image list here -->
-    <listview width="100%" height="150">
-        
-    </listview>
 </vbox>
