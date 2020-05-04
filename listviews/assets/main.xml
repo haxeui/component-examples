@@ -1,5 +1,5 @@
 <vbox style="padding: 5px;">
-    <script>
+   <script>
         function clear() {
             lv1.dataSource.clear();
             lv2.dataSource.clear();
