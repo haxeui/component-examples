@@ -1,0 +1,54 @@
+<menubar width="100%" id="mainMenu">
+    <menu text="Menu 1">
+        <menu-item text="Item 1" shortcutText="CTRL+1" icon="kenney/images/red_tick.png" />
+        <menu-separator />
+        <menu-item text="Item 2" shortcutText="CTRL+2" icon="kenney/images/green_tick.png" />
+        <menu text="Item 3" icon="kenney/images/green_tick.png">
+            <menu-item text="Sub Item 1" />
+            <menu-item text="Sub Item 2" />
+            <menu text="Sub Item 3">
+                <menu-item text="Sub Sub Item 1" />
+                <menu-item text="Sub Sub Item 2" />
+                <menu-item text="Sub Sub Item 3" />
+                <menu-item text="Sub Sub Item 4" />
+                <menu-item text="Sub Sub Item 5" />
+            </menu>    
+            <menu-item text="Sub Item 4" />
+            <menu-item text="Sub Item 5" />
+        </menu>
+        <menu-item text="Item 4" icon="kenney/images/red_tick.png" />
+        <menu-separator />
+        <menu-item text="Item 5"icon="kenney/images/red_tick.png" />
+    </menu>
+    <menu text="Menu 2">
+        <menu text="Checkboxes">
+            <menu-checkbox text="Check 1" selected="true" />
+            <menu-checkbox text="Check 2" />
+            <menu-checkbox text="Check 3" selected="true" />
+        </menu>
+        <menu text="Optionboxes">
+            <menu-optionbox text="Option 1" selected="true" group="menuGroup" />
+            <menu-optionbox text="Option 2" group="menuGroup" />
+            <menu-optionbox text="Option 3" group="menuGroup" />
+        </menu>    
+    </menu>
+    <menu text="Menu 3">
+        <menu-item text="Item 1" />
+        <menu-separator />
+        <menu-item text="Item 2" />
+        <menu text="Item 3">
+            <menu-item text="Sub Item 1" />
+            <menu-item text="Sub Item 2" />
+            <menu-item text="Sub Item 3" />
+            <menu-item text="Sub Item 4" />
+            <menu-item text="Sub Item 5" />
+        </menu>
+        <menu-item text="Item 4" />
+        <menu-separator />
+        <menu-item text="Item 5" />
+    </menu>
+    <menu text="Theme">
+        <menu-item id="kenney-theme" text="Kenney" />
+        <menu-item id="default-theme" text="Default" />
+    </menu>    
+</menubar>

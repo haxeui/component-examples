@@ -1,0 +1,27 @@
+<vbox text="Text Inputs" icon="kenney/images/green_tick.png" width="100%" height="100%">
+    <hbox width="100%" height="100%">
+        <vbox>
+            <grid>
+                <label text="Input field:" verticalAlign="center" />
+                <textfield placeholder="Enter some text" />
+
+                <label text="With icon:" verticalAlign="center" />
+                <textfield placeholder="Enter some text" icon="kenney/images/green_checkmark.png" />
+                
+                <label text="Password field:" verticalAlign="center" />
+                <textfield placeholder="Enter password" password="true" />
+                
+                <label text="With icon:" verticalAlign="center" />
+                <textfield placeholder="Enter password" password="true" icon="kenney/images/red_tick.png" />
+            </grid>
+            
+            <grid>
+                <number-stepper pos="30" />
+                <number-stepper pos="30" step="10" />
+                <number-stepper pos="30" step="10" min="10" max="50" />
+                <number-stepper pos="30" step=".1" min="10" max="50" precision="2" />
+            </grid>
+        </vbox>
+        <textarea width="100%" height="100%" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet felis sit amet vulputate gravida. Duis ac neque aliquam, aliquet justo eu, malesuada sapien. Vestibulum aliquam lorem eu diam vestibulum vulputate. Fusce erat arcu, rutrum at mattis quis, vestibulum hendrerit erat. Sed nec velit lacinia, posuere sem ut, interdum diam. Praesent faucibus dignissim libero non pulvinar. In finibus, tellus et consectetur scelerisque, neque lacus lobortis lorem, ac consectetur ipsum nulla placerat turpis. Proin blandit, odio ut fermentum malesuada, enim eros ultricies quam, ut cursus eros dolor eu eros. Nam interdum consequat mi, ut sodales turpis. Morbi euismod, libero sit amet ultrices venenatis, eros libero blandit arcu, eu pharetra neque leo eget ligula. Pellentesque quis mattis ante. Ut ac odio ullamcorper, bibendum nisi eu, placerat ante. Donec in quam non felis pulvinar vehicula non non dui. Aliquam erat volutpat. Phasellus a vehicula quam, at posuere nisl. Sed nulla nulla, placerat sed arcu non, tincidunt pretium erat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet felis sit amet vulputate gravida. Duis ac neque aliquam, aliquet justo eu, malesuada sapien. Vestibulum aliquam lorem eu diam vestibulum vulputate. Fusce erat arcu, rutrum at mattis quis, vestibulum hendrerit erat. Sed nec velit lacinia, posuere sem ut, interdum diam. Praesent faucibus dignissim libero non pulvinar. In finibus, tellus et consectetur scelerisque, neque lacus lobortis lorem, ac consectetur ipsum nulla placerat turpis. Proin blandit, odio ut fermentum malesuada, enim eros ultricies quam, ut cursus eros dolor eu eros. Nam interdum consequat mi, ut sodales turpis. Morbi euismod, libero sit amet ultrices venenatis, eros libero blandit arcu, eu pharetra neque leo eget ligula. Pellentesque quis mattis ante. Ut ac odio ullamcorper, bibendum nisi eu, placerat ante. Donec in quam non felis pulvinar vehicula non non dui. Aliquam erat volutpat. Phasellus a vehicula quam, at posuere nisl. Sed nulla nulla, placerat sed arcu non, tincidunt pretium erat." />
+    </hbox>    
+</vbox>

@@ -1,0 +1,69 @@
+<vbox text="Scrollers" icon="kenney/images/red_tick.png" width="100%" height="100%">
+    <hbox width="100%" height="100%">
+        
+        <vbox width="50%" height="100%">
+            <listview width="100%" height="50%">
+                <item-renderer layoutName="horizontal" width="100%">
+                    <checkbox id="complete" verticalAlign="center" />
+                    <vbox width="100%" verticalAlign="center" style="padding-left: 10px;">
+                        <label id="value" width="100%" verticalAlign="center" />
+                        <label id="subvalue" width="100%" verticalAlign="center" />
+                    </vbox>    
+                    <button text="Action" verticalAlign="center" styleName="red" />
+                </item-renderer>    
+                <data>
+                    <item value="Item 1" complete="true" subvalue="Sub value 1" />
+                    <item value="Item 2" complete="false" subvalue="Sub value 2" />
+                    <item value="Item 3" complete="true" subvalue="Sub value 3" />
+                    <item value="Item 4" complete="true" subvalue="Sub value 4" />
+                    <item value="Item 5" complete="false" subvalue="Sub value 5" />
+                </data>
+            </listview>    
+            <scrollview width="100%" height="50%">
+                <grid columns="3">
+                    <image resource="haxeui-core/styles/default/haxeui.png" />
+                    <image resource="haxeui-core/styles/default/haxeui.png" />
+                    <image resource="haxeui-core/styles/default/haxeui.png" />
+                    <image resource="haxeui-core/styles/default/haxeui.png" />
+                    <image resource="haxeui-core/styles/default/haxeui.png" />
+                    <image resource="haxeui-core/styles/default/haxeui.png" />
+                </grid>
+            </scrollview>
+        </vbox>
+        
+        <tableview width="50%" height="100%">
+            <header width="500">
+                <column id="colX" text="X" width="50" />
+                <column id="colA" text="Item" width="100%" />
+                <column id="colB" text="Progress" width="170" />
+                <column id="colC" text="Action" width="130" />
+            </header>
+            
+            <item-renderer verticalAlign="center">
+                <checkbox id="colX" styleNames="red-cross" />
+            </item-renderer>
+            <item-renderer verticalAlign="center">
+                <label id="colA" width="100%" />
+            </item-renderer>
+            <item-renderer verticalAlign="center">
+                <progress id="colB" width="100%" />
+            </item-renderer>
+            <item-renderer>
+                <button id="colC" width="100%" text="Action" styleNames="green" />
+            </item-renderer>
+            
+            <data>
+                <item colX="true" colA="Item 1" colB="44" />
+                <item colX="true" colA="Item 2" colB="77" />
+                <item colX="false" colA="Item 3" colB="25" />
+                <item colX="false" colA="Item 4" colB="45" />
+                <item colX="true" colA="Item 5" colB="33" />
+                <item colX="true" colA="Item 6" colB="55" />
+                <item colX="false" colA="Item 7" colB="12" />
+                <item colX="true" colA="Item 8" colB="50" />
+                <item colX="true" colA="Item 9" colB="30" />
+                <item colX="true" colA="Item 10" colB="44" />
+            </data>
+        </tableview>
+    </hbox>
+</vbox>

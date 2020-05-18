@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox text="Dialogs" icon="kenney/images/green_tick.png">
+    <hbox>
+        <button id="infoButton" text="Info" />
+        <button id="questionButton" text="Question" />
+        <button id="warningButton" text="Warning" />
+        <button id="errorButton" text="Error" />
+    </hbox>  
+    <hbox>
+        <button id="dialog1Button" text="Dialog 1" />
+        <button id="dialog2Button" text="Dialog 2" />
+        <button id="dialog3Button" text="Dialog 3" />
+    </hbox>    
+</vbox>

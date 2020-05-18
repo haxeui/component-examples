@@ -1,0 +1,75 @@
+<vbox text="Basic" icon="kenney/images/grey_tickGrey.png">
+    <hbox>
+        <vbox>
+            <hbox>
+                <button text="Default" />
+                <button text="Red" styleName="red" />
+                <button text="Green" styleName="green" />
+            </hbox> 
+            <hbox>
+                <button text="Yellow" styleName="yellow" />
+                <button text="Grey" styleName="grey" />
+            </hbox>
+            <hbox>
+                <vbox>
+                    <hbox>
+                        <vbox>
+                            <checkbox text="Check 1" selected="true" />
+                            <checkbox text="Check 2" />
+                            <checkbox text="Check 3" selected="true" />
+                        </vbox>
+                        <vbox>
+                            <optionbox text="Option 1"  />
+                            <optionbox text="Option 2" selected="true" />
+                            <optionbox text="Option 3" />
+                        </vbox>
+                    </hbox>    
+                    <slider id="slider1" pos="66" />
+                    <progress id="progress1" pos="33" />
+                    <progress id="progress2" pos="66" styleNames="green" />
+                    <slider id="slider2" start="25" end="75" />
+                </vbox>    
+
+                <slider id="slider3" pos="66" direction="vertical" />
+                <progress id="progress3" pos="33" direction="vertical" />
+                <progress id="progress4" pos="66" direction="vertical" styleNames="red" />
+                <slider id="slider4" start="25" end="75" direction="vertical" />
+            </hbox>  
+        </vbox>    
+        <vbox>
+            <dropdown text="Select List Item">
+                <data>
+                    <item value="Item 1" icon="kenney/images/green_tick.png" />
+                    <item value="Item 2" icon="kenney/images/red_tick.png" />
+                    <item value="Item 3" icon="kenney/images/red_tick.png" />
+                    <item value="Item 4" icon="kenney/images/green_tick.png" />
+                    <item value="Item 5" icon="kenney/images/green_tick.png" />
+                    <item value="Item 6" icon="kenney/images/red_tick.png" />
+                    <item value="Item 7" icon="kenney/images/green_tick.png" />
+                    <item value="Item 8" icon="kenney/images/red_tick.png" />
+                    <item value="Item 9" icon="kenney/images/green_tick.png" />
+                </data>
+            </dropdown>    
+            <dropdown text="Select List Item" dropdownWidth="300">
+                <data>
+                    <item value="Item 1" icon="kenney/images/green_tick.png" />
+                    <item value="Item 2" icon="kenney/images/red_tick.png" />
+                    <item value="Item 3" icon="kenney/images/red_tick.png" />
+                    <item value="Item 4" icon="kenney/images/green_tick.png" />
+                    <item value="Item 5" icon="kenney/images/green_tick.png" />
+                    <item value="Item 6" icon="kenney/images/red_tick.png" />
+                    <item value="Item 7" icon="kenney/images/green_tick.png" />
+                    <item value="Item 8" icon="kenney/images/red_tick.png" />
+                    <item value="Item 9" icon="kenney/images/green_tick.png" />
+                </data>
+            </dropdown>    
+            <dropdown text="Select Date Item" type="date">
+            </dropdown>   
+            <image resource="haxeui-core/styles/default/haxeui.png" />
+            
+            <!--
+            <box styleName="slice9-test" width="300" height="100" />
+            -->    
+        </vbox>
+    </hbox>    
+</vbox>

@@ -1,0 +1,19 @@
+<box id="main" style="padding: 0px;" width="100%" height="100%" styleName="default-background">
+    <import source="menu.xml" />
+
+    <style>
+    #mainTabs .tabview-content {
+        filter: drop-shadow(1, 45, #000000, 0.2, 30, 2, 1, 3, false);
+    }
+    </style>
+
+    <image styleName="kenney-logo" style="padding:15px;" horizontalAlign="right" verticalAlign="bottom" />
+
+    <tabview id="mainTabs" width="750" height="440" horizontalAlign="center" verticalAlign="center">
+        <import source="basic.xml" />
+        <import source="text.xml" />
+        <import source="scrollers.xml" />
+        <import source="advanced.xml" />
+        <import source="dialogs.xml" />
+    </tabview>
+</box>

@@ -1,15 +1,35 @@
 <vbox style="padding: 5px;">
 
-    <style>
+    <script>
+        function test() {
+            trace("bob");
+        
+            var p = pg.findComponent("stringProp");
+            trace(p.value);
+            trace('p.value == "Value 1"? ' + (p.value == "Value 1"));
+            
+            var p = pg.findComponent("boolProp");
+            trace(p.value);
+            trace('p.value == true? ' + (p.value == true));
+            
+            var p = pg.findComponent("intProp");
+            trace(p.value);
+            trace('p.value == 101? ' + (p.value == 101));
+            
+            var p = pg.findComponent("listProp");
+            trace(p.value);
+            trace('p.value == "Item 1"? ' + (p.value == "Item 1"));
+        }
+    </script>
     
-    </style>
+    <button text="Test" onclick="test()" />
     
-    <property-grid width="250" height="300">
+    <property-grid id="pg" width="250" height="300" onchange="trace(event.target.id + ' = ' + event.target.value)">
         <property-group text="Primary Group">
-            <property text="String Property" value="Value 1" />
-            <property text="Bool Property" type="boolean" value="true" />
-            <property text="Int Property" type="int" value="101" />
-            <property text="List Property" type="list" value="Item 1">
+            <property id="stringProp" label="String Property" value="Value 1" />
+            <property id="boolProp" label="Bool Property" type="boolean" value="true" />
+            <property id="intProp" label="Int Property" type="int" value="101" />
+            <property id="listProp" label="List Property" type="list" value="Item 1">
                 <data>
                     <item value="Item 1" />
                     <item value="Item 2" />
@@ -22,10 +42,10 @@
         </property-group>
         
         <property-group text="Secondary Group">
-            <property text="String Property" value="Value 2" />
-            <property text="Bool Property" type="boolean" value="false" />
-            <property text="Int Property" type="int" value="102" />
-            <property text="List Property" type="list" value="Item 2">
+            <property label="String Property" value="Value 2" />
+            <property label="Bool Property" type="boolean" value="false" />
+            <property label="Int Property" type="int" value="102" />
+            <property label="List Property" type="list" value="Item 2">
                 <data>
                     <item value="Item 1" />
                     <item value="Item 2" />
@@ -38,10 +58,10 @@
         </property-group>
         
         <property-group text="Tertiary Group">
-            <property text="String Property" value="Value 3" />
-            <property text="Bool Property" type="boolean" value="true" />
-            <property text="Int Property" type="int" value="103" />
-            <property text="List Property" type="list" value="Item 3">
+            <property label="String Property" value="Value 3" />
+            <property label="Bool Property" type="boolean" value="true" />
+            <property label="Int Property" type="int" value="103" />
+            <property label="List Property" type="list" value="Item 3">
                 <data>
                     <item value="Item 1" />
                     <item value="Item 2" />
