@@ -1,0 +1,34 @@
+<vbox style="padding: 5px;">
+    <hbox>
+        <frame text="Frame 1">
+            <button text="Button" />
+        </frame>
+        
+        <frame text="Frame 2" width="200">
+            <button text="Button" width="100%" />
+        </frame>
+        
+        <frame text="Frame 3" height="100">
+            <button text="Button" height="100%" />
+        </frame>
+
+        <frame text="Frame 4" width="100" height="100">
+            <button text="Button" width="100%" height="100%" />
+        </frame>
+               
+        <frame text="Frame 5">
+            <button text="Button" width="100" height="100" />
+        </frame>
+        
+        <frame text="Frame 6" width="200">
+            <vbox width="100%">
+                <button text="Button" width="100%" />
+                <button text="Button" width="100%" />
+                <button text="Button" width="100%" />
+                <button text="Button" width="100%" />
+                <button text="Button" width="100%" />
+            </vbox>    
+        </frame>
+        
+    </hbox>    
+</vbox>
