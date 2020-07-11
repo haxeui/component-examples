@@ -16,4 +16,8 @@
         <import source="advanced.xml" />
         <import source="dialogs.xml" />
     </tabview>
+    <!--
+               <box styleName="slice9-test" width="300" height="100" />
+    -->    
+
 </box>

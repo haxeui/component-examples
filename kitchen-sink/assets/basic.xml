@@ -39,28 +39,28 @@
         <vbox>
             <dropdown text="Select List Item">
                 <data>
-                    <item value="Item 1" icon="kenney/images/green_tick.png" />
-                    <item value="Item 2" icon="kenney/images/red_tick.png" />
-                    <item value="Item 3" icon="kenney/images/red_tick.png" />
-                    <item value="Item 4" icon="kenney/images/green_tick.png" />
-                    <item value="Item 5" icon="kenney/images/green_tick.png" />
-                    <item value="Item 6" icon="kenney/images/red_tick.png" />
-                    <item value="Item 7" icon="kenney/images/green_tick.png" />
-                    <item value="Item 8" icon="kenney/images/red_tick.png" />
-                    <item value="Item 9" icon="kenney/images/green_tick.png" />
+                    <item text="Item 1" icon="kenney/images/green_tick.png" />
+                    <item text="Item 2" icon="kenney/images/red_tick.png" />
+                    <item text="Item 3" icon="kenney/images/red_tick.png" />
+                    <item text="Item 4" icon="kenney/images/green_tick.png" />
+                    <item text="Item 5" icon="kenney/images/green_tick.png" />
+                    <item text="Item 6" icon="kenney/images/red_tick.png" />
+                    <item text="Item 7" icon="kenney/images/green_tick.png" />
+                    <item text="Item 8" icon="kenney/images/red_tick.png" />
+                    <item text="Item 9" icon="kenney/images/green_tick.png" />
                 </data>
             </dropdown>    
             <dropdown text="Select List Item" dropdownWidth="300">
                 <data>
-                    <item value="Item 1" icon="kenney/images/green_tick.png" />
-                    <item value="Item 2" icon="kenney/images/red_tick.png" />
-                    <item value="Item 3" icon="kenney/images/red_tick.png" />
-                    <item value="Item 4" icon="kenney/images/green_tick.png" />
-                    <item value="Item 5" icon="kenney/images/green_tick.png" />
-                    <item value="Item 6" icon="kenney/images/red_tick.png" />
-                    <item value="Item 7" icon="kenney/images/green_tick.png" />
-                    <item value="Item 8" icon="kenney/images/red_tick.png" />
-                    <item value="Item 9" icon="kenney/images/green_tick.png" />
+                    <item text="Item 1" icon="kenney/images/green_tick.png" />
+                    <item text="Item 2" icon="kenney/images/red_tick.png" />
+                    <item text="Item 3" icon="kenney/images/red_tick.png" />
+                    <item text="Item 4" icon="kenney/images/green_tick.png" />
+                    <item text="Item 5" icon="kenney/images/green_tick.png" />
+                    <item text="Item 6" icon="kenney/images/red_tick.png" />
+                    <item text="Item 7" icon="kenney/images/green_tick.png" />
+                    <item text="Item 8" icon="kenney/images/red_tick.png" />
+                    <item text="Item 9" icon="kenney/images/green_tick.png" />
                 </data>
             </dropdown>    
             <dropdown text="Select Date Item" type="date">

@@ -6,12 +6,12 @@
             <property id="intProp" label="Int Property" type="int" value="101" />
             <property id="listProp" label="List Property" type="list" value="Item 1">
                 <data>
-                    <item value="Item 1" />
-                    <item value="Item 2" />
-                    <item value="Item 3" />
-                    <item value="Item 4" />
-                    <item value="Item 5" />
-                    <item value="Item 6" />
+                    <item text="Item 1" />
+                    <item text="Item 2" />
+                    <item text="Item 3" />
+                    <item text="Item 4" />
+                    <item text="Item 5" />
+                    <item text="Item 6" />
                 </data>
             </property>    
         </property-group>
@@ -22,12 +22,12 @@
             <property label="Int Property" type="int" value="102" />
             <property label="List Property" type="list" value="Item 2">
                 <data>
-                    <item value="Item 1" />
-                    <item value="Item 2" />
-                    <item value="Item 3" />
-                    <item value="Item 4" />
-                    <item value="Item 5" />
-                    <item value="Item 6" />
+                    <item text="Item 1" />
+                    <item text="Item 2" />
+                    <item text="Item 3" />
+                    <item text="Item 4" />
+                    <item text="Item 5" />
+                    <item text="Item 6" />
                 </data>
             </property>    
         </property-group>
@@ -38,12 +38,12 @@
             <property label="Int Property" type="int" value="103" />
             <property label="List Property" type="list" value="Item 3">
                 <data>
-                    <item value="Item 1" />
-                    <item value="Item 2" />
-                    <item value="Item 3" />
-                    <item value="Item 4" />
-                    <item value="Item 5" />
-                    <item value="Item 6" />
+                    <item text="Item 1" />
+                    <item text="Item 2" />
+                    <item text="Item 3" />
+                    <item text="Item 4" />
+                    <item text="Item 5" />
+                    <item text="Item 6" />
                 </data>
             </property>    
         </property-group>
@@ -60,26 +60,26 @@
         <vbox text="Page 2" width="100%">
             <listview width="100%" height="100%">
                 <data>
-                    <item value="Item 1" />
-                    <item value="Item 2" />
-                    <item value="Item 3" />
-                    <item value="Item 4" />
-                    <item value="Item 5" />
-                    <item value="Item 6" />
-                    <item value="Item 7" />
-                    <item value="Item 8" />
-                    <item value="Item 9" />
-                    <item value="Item 10" />
-                    <item value="Item 11" />
-                    <item value="Item 12" />
-                    <item value="Item 13" />
-                    <item value="Item 14" />
-                    <item value="Item 15" />
-                    <item value="Item 16" />
-                    <item value="Item 17" />
-                    <item value="Item 18" />
-                    <item value="Item 19" />
-                    <item value="Item 20" />
+                    <item text="Item 1" />
+                    <item text="Item 2" />
+                    <item text="Item 3" />
+                    <item text="Item 4" />
+                    <item text="Item 5" />
+                    <item text="Item 6" />
+                    <item text="Item 7" />
+                    <item text="Item 8" />
+                    <item text="Item 9" />
+                    <item text="Item 10" />
+                    <item text="Item 11" />
+                    <item text="Item 12" />
+                    <item text="Item 13" />
+                    <item text="Item 14" />
+                    <item text="Item 15" />
+                    <item text="Item 16" />
+                    <item text="Item 17" />
+                    <item text="Item 18" />
+                    <item text="Item 19" />
+                    <item text="Item 20" />
                 </data>
             </listview>
         </vbox>   

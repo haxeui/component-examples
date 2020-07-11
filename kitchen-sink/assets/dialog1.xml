@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<hbox width="100%">
-    <image resource="haxeui-core/styles/default/haxeui.png" />
-    <grid width="100%">
-        <label text="Username" verticalAlign="center" />
-        <textfield placeholder="Enter some text" icon="kenney/images/green_checkmark.png" width="100%" />
-        
-        <label text="Password:" verticalAlign="center" />
-        <textfield placeholder="Enter password" password="true" icon="kenney/images/red_tick.png" width="100%" />
-        
-        <label text="Gender:" verticalAlign="center" />
-        <dropdown text="Select Item" width="100%">
-            <data>
-                <item value="Male" icon="kenney/images/green_tick.png" />
-                <item value="Female" icon="kenney/images/green_tick.png" />
-                <item value="Unspecified" icon="kenney/images/green_tick.png" />
-            </data>
-        </dropdown>    
-    </grid>
-</hbox>
+<dialog>
+    <hbox width="100%">
+        <image resource="haxeui-core/styles/default/haxeui.png" />
+        <grid width="100%">
+            <label text="Username" verticalAlign="center" />
+            <textfield placeholder="Enter some text" icon="kenney/images/green_checkmark.png" width="100%" />
+            
+            <label text="Password:" verticalAlign="center" />
+            <textfield placeholder="Enter password" password="true" icon="kenney/images/red_tick.png" width="100%" />
+            
+            <label text="Gender:" verticalAlign="center" />
+            <dropdown text="Select Item" width="100%">
+                <data>
+                    <item text="Male" icon="kenney/images/green_tick.png" />
+                    <item text="Female" icon="kenney/images/green_tick.png" />
+                    <item text="Unspecified" icon="kenney/images/green_tick.png" />
+                </data>
+            </dropdown>    
+        </grid>
+    </hbox>
+</dialog>    
