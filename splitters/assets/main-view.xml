@@ -2,13 +2,31 @@
     <splitter direction="vertical" width="800" height="600">
         <splitter width="100%" height="100%">
             <splitter direction="vertical" width="100%" height="100%">
-                <box width="100%" height="20%" style="background-color: #DDFFDD;" />
+                <box width="100%" height="20%" style="background-color: #DDFFDD;padding:5px;">
+                    <button text="Button" verticalAlign="center" horizontalAlign="center" />
+                </box>
                 <splitter width="100%" height="50%">
                     <box width="30%" height="100%" style="background-color: #CCFFCC;" />
                     <box width="40%" height="100%" style="background-color: #BBEEBB;">
-                        <button text="Button" verticalAlign="center" horizontalAlign="center" />
+                        <scrollview width="100%" height="100%">
+                            <grid columns="3">
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                                <image resource="haxeui-core/styles/default/haxeui.png" />
+                            </grid>
+                        </scrollview>
                     </box>    
-                    <box width="30%" height="100%" style="background-color: #AADDAA;" />
+                    <box width="30%" height="100%" style="background-color: #AADDAA;padding:5px;">
+                        <button text="Button" width="100%" verticalAlign="bottom" horizontalAlign="center" />
+                    </box>
                 </splitter>    
                 <box width="100%" height="30%" style="background-color: #99CC99;padding:5px;">
                     <button text="Button" verticalAlign="bottom" horizontalAlign="right" />
