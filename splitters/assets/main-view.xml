@@ -1,0 +1,34 @@
+<vbox style="padding: 50px;">
+    <splitter direction="vertical" width="800" height="600">
+        <splitter width="100%" height="100%">
+            <splitter direction="vertical" width="100%" height="100%">
+                <box width="100%" height="20%" style="background-color: #DDFFDD;" />
+                <splitter width="100%" height="50%">
+                    <box width="30%" height="100%" style="background-color: #CCFFCC;" />
+                    <box width="40%" height="100%" style="background-color: #BBEEBB;">
+                        <button text="Button" verticalAlign="center" horizontalAlign="center" />
+                    </box>    
+                    <box width="30%" height="100%" style="background-color: #AADDAA;" />
+                </splitter>    
+                <box width="100%" height="30%" style="background-color: #99CC99;padding:5px;">
+                    <button text="Button" verticalAlign="bottom" horizontalAlign="right" />
+                </box>
+            </splitter>
+            <splitter direction="vertical" width="200" height="100%">
+                <box width="100%" height="10%" style="background-color: #CCCCFF;" />
+                <box width="100%" height="80%" style="background-color: #BBBBEE;padding:5px;">
+                    <button text="Button" verticalAlign="center" horizontalAlign="right" />
+                </box>    
+                <box width="100%" height="10%" style="background-color: #AAAADD;" />
+            </splitter>
+        </splitter>
+        
+        <splitter width="100%" height="100">
+            <box width="10%" height="100%" style="background-color: #FFCCCC;" />
+            <box width="80%" height="100%" style="background-color: #EEBBBB;padding:5px;">
+                <button text="Button" verticalAlign="bottom" horizontalAlign="left" />
+            </box>    
+            <box width="10%" height="100%" style="background-color: #DDAAAA;" />
+        </splitter>
+    </splitter>
+</vbox>
