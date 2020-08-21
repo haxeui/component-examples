@@ -1,6 +1,6 @@
-<vbox style="padding: 5px;border:1px solid black" width="1500" height="1300">
+<vbox>
     
-    <vbox style="padding: 5px;border:1px solid black">
+    <vbox>
         <tabview width="500" height="260">
             <vbox text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" width="100%" height="100%">
                 <scrollview width="100%" height="100%">
