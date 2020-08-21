@@ -1,0 +1,53 @@
+<vbox style="padding: 5px;border:1px solid black" width="1500" height="1300">
+    
+    <vbox style="padding: 5px;border:1px solid black">
+        <tabview width="500" height="260">
+            <vbox text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" width="100%" height="100%">
+                <scrollview width="100%" height="100%">
+                    <hbox>
+                        <button text="Button" iconPosition="top" icon="haxeui-core/styles/default/haxeui.png" />
+                        <vbox>
+                            <slider value="33" />
+                            <progress value="66" />
+                            <hbox>
+                                <checkbox text="Checkbox" selected="true" />
+                                <optionbox text="Optionbox" selected="true" />
+                            </hbox>
+                            <hbox>
+                                <dropdown width="100">
+                                    <data>
+                                        <item text="Item 1" />
+                                    </data>
+                                </dropdown>
+                                <number-stepper />
+                            </hbox>    
+                            <frame text="Frame">
+                                <hbox>
+                                    <button text="Button" style="color: blue;font-size: 22px" />
+                                    <label text="Label" style="color: red;font-size: 22px" verticalAlign="center" />
+                                </hbox>    
+                            </frame>
+                            <textfield placeholder="Enter text" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                            <button text="Button" />
+                            <button text="Button" />
+                            <button text="Button" />
+                            <button text="Button" />
+                            <button text="Button" />
+                            <button text="Button" />
+                            <button text="Button" />
+                            <button text="Button" />
+                            <button text="Button" />
+                        </vbox>
+                        <hbox>
+                            <slider value="33" direction="vertical" />
+                            <progress value="66" direction="vertical" />
+                        </hbox>
+                    </hbox>    
+                </scrollview>
+            </vbox>
+            <vbox text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
+                
+            </vbox>
+        </tabview>
+    </vbox>    
+</vbox>
