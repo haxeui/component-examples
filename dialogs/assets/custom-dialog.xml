@@ -4,21 +4,21 @@
         <hbox text="Page 1" width="100%" height="100%">
             <listview width="200" height="100%">
                 <data>
-                    <item value="Item 1" />
-                    <item value="Item 2" />
-                    <item value="Item 3" />
-                    <item value="Item 4" />
-                    <item value="Item 5" />
-                    <item value="Item 6" />
-                    <item value="Item 7" />
-                    <item value="Item 8" />
-                    <item value="Item 9" />
-                    <item value="Item 10" />
-                    <item value="Item 11" />
-                    <item value="Item 12" />
-                    <item value="Item 13" />
-                    <item value="Item 14" />
-                    <item value="Item 15" />
+                    <item text="Item 1" />
+                    <item text="Item 2" />
+                    <item text="Item 3" />
+                    <item text="Item 4" />
+                    <item text="Item 5" />
+                    <item text="Item 6" />
+                    <item text="Item 7" />
+                    <item text="Item 8" />
+                    <item text="Item 9" />
+                    <item text="Item 10" />
+                    <item text="Item 11" />
+                    <item text="Item 12" />
+                    <item text="Item 13" />
+                    <item text="Item 14" />
+                    <item text="Item 15" />
                 </data>    
             </listview>
             <grid width="100%" columns="2" style="padding: 5px;">
@@ -31,8 +31,8 @@
                 <label text="Sex" verticalAlign="center" />
                 <dropdown selectedIndex="0" width="100%">
                     <data>
-                        <item value="Male" />
-                        <item value="Female" />
+                        <item text="Male" />
+                        <item text="Female" />
                     </data>
                 </dropdown>
             </grid>
