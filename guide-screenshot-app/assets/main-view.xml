@@ -50,14 +50,14 @@
                     </item-renderer>
                     <data>
                         <item text="List Item 1" />
-                        <item text="List Item 2" />
+                        <item text="List Item 2" checked="true" />
                         <item text="List Item 3" />
-                        <item text="List Item 4" />
+                        <item text="List Item 4" checked="true" />
                         <item text="List Item 5" />
-                        <item text="List Item 6" />
+                        <item text="List Item 6" checked="true" />
                         <item text="List Item 7" />
                         <item text="List Item 8" />
-                        <item text="List Item 9" />
+                        <item text="List Item 9" checked="true" />
                         <item text="List Item 10" />
                         <item text="List Item 11" />
                         <item text="List Item 12" />
