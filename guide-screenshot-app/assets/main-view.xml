@@ -1,14 +1,13 @@
-<vbox>
-    
+<vbox style="padding: 10px;">
     <vbox>
-        <tabview width="500" height="260">
-            <vbox text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" width="100%" height="100%">
-                <scrollview width="100%" height="100%">
+        <tabview width="650" height="260">
+            <hbox text="Page 1" icon="haxeui-core/styles/default/haxeui_tiny.png" width="100%" height="100%">
+                <scrollview width="70%" height="100%">
                     <hbox>
                         <button text="Button" iconPosition="top" icon="haxeui-core/styles/default/haxeui.png" />
                         <vbox>
-                            <slider value="33" />
-                            <progress value="66" />
+                            <slider value="33" width="100%" />
+                            <progress value="66" width="100%" />
                             <hbox>
                                 <checkbox text="Checkbox" selected="true" />
                                 <optionbox text="Optionbox" selected="true" />
@@ -19,12 +18,12 @@
                                         <item text="Item 1" />
                                     </data>
                                 </dropdown>
-                                <number-stepper />
+                                <number-stepper width="50" />
                             </hbox>    
                             <frame text="Frame">
                                 <hbox>
                                     <button text="Button" style="color: blue;font-size: 22px" />
-                                    <label text="Label" style="color: red;font-size: 22px" verticalAlign="center" />
+                                    <label text="Label" style="color: red;" verticalAlign="center" />
                                 </hbox>    
                             </frame>
                             <textfield placeholder="Enter text" icon="haxeui-core/styles/default/haxeui_tiny.png" />
@@ -40,11 +39,34 @@
                         </vbox>
                         <hbox>
                             <slider value="33" direction="vertical" />
-                            <progress value="66" direction="vertical" />
+                            <progress value="66" direction="vertical" height="100%" />
                         </hbox>
                     </hbox>    
                 </scrollview>
-            </vbox>
+                <listview width="30%" height="100%">
+                    <item-renderer width="100%" layoutName="horizontal">
+                        <checkbox id="checked" verticalAlign="center" />
+                        <label id="text" verticalAlign="center" />
+                    </item-renderer>
+                    <data>
+                        <item text="List Item 1" />
+                        <item text="List Item 2" />
+                        <item text="List Item 3" />
+                        <item text="List Item 4" />
+                        <item text="List Item 5" />
+                        <item text="List Item 6" />
+                        <item text="List Item 7" />
+                        <item text="List Item 8" />
+                        <item text="List Item 9" />
+                        <item text="List Item 10" />
+                        <item text="List Item 11" />
+                        <item text="List Item 12" />
+                        <item text="List Item 13" />
+                        <item text="List Item 14" />
+                        <item text="List Item 15" />
+                    </data>
+                </listview>
+            </hbox>
             <vbox text="Page 2" icon="haxeui-core/styles/default/haxeui_tiny.png">
                 
             </vbox>
